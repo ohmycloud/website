@@ -5743,12 +5743,10 @@ ImportCpp编译指示
   proc dictLookup(a: Dict, k: Key): Value {.importcpp: "#[#]".}
 
 
-- An apostrophe ``'`` followed by an integer ``i`` in the range 0..9
-  is replaced by the i'th parameter *type*. The 0th position is the result
-  type. This can be used to pass types to C++ function templates. Between
-  the ``'`` and the digit an asterisk can be used to get to the base type
-  of the type. (So it "takes away a star" from the type; ``T*`` becomes ``T``.)
-  Two stars can be used to get to the element type of the element type etc.
+- 上标点 ``'`` 后跟0..9范围的整数 ``i`` 被第i个形参类型替换。
+  第0位是结果类型。这可以用于将类型传递给C++函数模板。
+  在 ``'`` 和数字之间可以使用星号来获得该类型的基类型。 （所以它从类型中“拿走了一颗星”; ``T *`` 变为 ``T`` 。）
+  可以使用两颗星来获取元素类型的元素类型等。
 
 示例：
 
@@ -5759,33 +5757,32 @@ ImportCpp编译指示
 
   let x: ptr Input = getSubsystem[Input]()
 
-Produces:
+生成:
 
 .. code-block:: C
   x = SystemManager::getSubsystem<System::Input>()
 
 
-- ``#@`` is a special case to support a ``cnew`` operation. It is required so
-  that the call expression is inlined directly, without going through a
-  temporary location. This is only required to circumvent a limitation of the
-  current code generator.
+- ``#@``是一个支持 ``cnew`` 操作的特例。
+  这是必需的，以便直接内联调用表达式，而无需通过临时位置。
+  这只是为了规避当前代码生成器的限制。
 
-For example C++'s ``new`` operator can be "imported" like this:
+例如，C++的 ``new`` 运算符可以像这样“导入”：
 
 .. code-block:: nim
   proc cnew*[T](x: T): ptr T {.importcpp: "(new '*0#@)", nodecl.}
 
-  # constructor of 'Foo':
+  # 'Foo'构造函数:
   proc constructFoo(a, b: cint): Foo {.importcpp: "Foo(@)".}
 
   let x = cnew constructFoo(3, 4)
 
-Produces:
+生成:
 
 .. code-block:: C
   x = new Foo(3, 4)
 
-However, depending on the use case ``new Foo`` can also be wrapped like this instead:
+但是，根据用例，``new Foo`` 也可以这样包装：
 
 .. code-block:: nim
   proc newFoo(a, b: cint): ptr Foo {.importcpp: "new Foo(@)".}
@@ -5796,9 +5793,9 @@ However, depending on the use case ``new Foo`` can also be wrapped like this ins
 封装构造函数
 ~~~~~~~~~~~~~~~~~~~~~
 
-Sometimes a C++ class has a private copy constructor and so code like ``Class c = Class(1,2);`` must not be generated but instead ``Class c(1,2);``.
-For this purpose the Nim proc that wraps a C++ constructor needs to be annotated with the `constructor`:idx: pragma. 
-This pragma also helps to generate faster C++ code since construction then doesn't invoke the copy constructor:
+有时候C++类有一个私有的复制构造函数，因此不能生成像 ``Class c = Class(1,2);`` 这样的代码，而是 ``Class c(1,2);`` 。
+为此，包含C ++构造函数的Nim proc需要使用 `构造函数`:idx: 编译器。 
+这个编译指示也有助于生成更快的C++代码，因为构造然后不会调用复制构造函数：
 
 .. code-block:: nim
   # 更好的'Foo'构建函数：
@@ -5838,9 +5835,8 @@ This pragma also helps to generate faster C++ code since construction then doesn
   x[6] = 91.4;
 
 
-- If more precise control is needed, the apostrophe ``'`` can be used in the
-  supplied pattern to denote the concrete type parameters of the generic type.
-  See the usage of the apostrophe operator in proc patterns for more details.
+- 如果需要更精确的控制, 上标点 ``'`` 可以用在提供的模式里标志泛型类型的具体类型参数。
+  更多细节，见过程模式中的上标点操作符。
 
 .. code-block:: nim
 
@@ -5859,14 +5855,13 @@ Produces:
 
 ImportObjC编译指示
 -----------------
-Similar to the `importc pragma for C <#foreign-function-interface-importc-pragma>`_ , the ``importobjc`` pragma can
-be used to import `Objective C`:idx: methods.  The generated code then uses the
-Objective C method calling syntax: ``[obj method param1: arg]``.
-In addition with the ``header`` and ``emit`` pragmas this
-allows *sloppy* interfacing with libraries written in Objective C:
+和 `importc pragma for C <#foreign-function-interface-importc-pragma>`_ 类似, 
+``importobjc`` 编译指示可用于导入 `Objective C`:idx: 方法。  
+生成的代码使用Objective C 方法调用语法: ``[obj method param1: arg]``.
+除了 ``header`` 和 ``emit`` 编译指示之外，这允许与Objective C中编写的库的 *草率* 对接：
 
 .. code-block:: Nim
-  # horrible example of how to interface with GNUStep ...
+  # 和GNUStep对接的反例 ...
 
   {.passL: "-lobjc".}
   {.emit: """
@@ -5901,42 +5896,39 @@ allows *sloppy* interfacing with libraries written in Objective C:
   g.greet(12, 34)
   g.free()
 
-The compiler needs to be told to generate Objective C (command ``objc``) for
-this to work. The conditional symbol ``objc`` is defined when the compiler
-emits Objective C code.
+
+需要告诉编译器生成Objective C(命令 ``objc`` )以使其工作。当编译器发出Objective C代码时，定义条件符号 ``objc`` 。
 
 
 CodegenDecl编译指示
 ------------------
 
-The ``codegenDecl`` 编译指示 can be used to directly influence Nim's code
-generator. It receives a format string that determines how the variable
-or proc is declared in the generated code.
+``codegenDecl`` 编译指示可用于直接影响Nim的代码生成器。
 
-For variables $1 in the format string represents the type of the variable
-and $2 is the name of the variable.
+它接收一个格式字符串，用于确定如何在生成的代码中声明变量或proc。
 
-The following Nim code:
+对于变量，格式字符串中的$1表示变量的类型，$2是变量的名称。
+
+以下Nim哇到处:
 
 .. code-block:: nim
   var
     a {.codegenDecl: "$# progmem $#".}: int
 
-will generate this C code:
+会生成这个C代码:
 
 .. code-block:: c
   int progmem a
 
-For procedures $1 is the return type of the procedure, $2 is the name of
-the procedure and $3 is the parameter list.
+对于过程，$1是过程的返回类型，$2是过程的名称，$3是参数列表。
 
-The following nim code:
+下列nim代码:
 
 .. code-block:: nim
   proc myinterrupt() {.codegenDecl: "__interrupt $# $#$#".} =
     echo "realistic interrupt handler"
 
-will generate this code:
+会生成这个代码:
 
 .. code-block:: c
   __interrupt void myinterrupt()
@@ -5945,13 +5937,13 @@ will generate this code:
 InjectStmt编译指示
 -----------------
 
-The ``injectStmt`` 编译指示can be used to inject a statement before every other statement in the current module. 
-It is only supposed to be used for debugging:
+``injectStmt`` 编译指示可用于在当前模块中的每个其他语句之前注入语句。
+它只应该用于调试：
 
 .. code-block:: nim
   {.injectStmt: gcInvariants().}
 
-  # ... complex code here that produces crashes ...
+  # ... 这里的复杂代码会导致崩溃 ...
 
 编译期定义的编译指示
 ---------------------------
@@ -5975,18 +5967,16 @@ pragma             description
 ::
    nim c -d:FooBar=42 foobar.nim
 
-In the above example, providing the -d flag causes the symbol
-``FooBar`` to be overwritten at compile time, printing out 42. If the
-``-d:FooBar=42`` were to be omitted, the default value of 5 would be
-used. To see if a value was provided, `defined(FooBar)` can be used.
+在上面的例子中，提供-d标志会导致符号 ``FooBar`` 在编译时被覆盖，打印出42。
+如果省略 ``-d:FooBar = 42`` ，则使用默认值5。要查看是否提供了值，可以使用 `defined(FooBar)` 。
 
-The syntax `-d:flag` is actually just a shortcut for `-d:flag=true`.
+语法 `-d：flag` 实际上只是 `-d:flag = true` 的快捷方式。
 
 自定义标注
 ------------------
-It is possible to define custom typed pragmas. Custom pragmas do not effect
-code generation directly, but their presence can be detected by macros.
-Custom pragmas are defined using templates annotated with pragma ``pragma``:
+可以定义自定义类型的编译指示。
+自定义编译指示不会直接影响代码生成，但可以通过宏检测它们的存在。
+使用带有编译指示“pragma”的注释模板定义自定义编译指示：
 
 .. code-block:: nim
   template dbTable(name: string, table_space: string = "") {.pragma.}
@@ -5995,10 +5985,10 @@ Custom pragmas are defined using templates annotated with pragma ``pragma``:
   template dbIgnore {.pragma.}
 
 
-Consider stylized example of possible Object Relation Mapping (ORM) implementation:
+考虑风格化的对象关系映射(ORM)实现示例:
 
 .. code-block:: nim
-  const tblspace {.strdefine.} = "dev" # switch for dev, test and prod environments
+  const tblspace {.strdefine.} = "dev" # dev, test和prod环境的开关
 
   type
     User {.dbTable("users", tblspace).} = object
@@ -6014,25 +6004,22 @@ Consider stylized example of possible Object Relation Mapping (ORM) implementati
       write_access: bool
       admin_acess: bool
 
-In this example custom pragmas are used to describe how Nim objects are
-mapped to the schema of the relational database. Custom pragmas can have
-zero or more arguments. In order to pass multiple arguments use one of
-template call syntaxes. All arguments are typed and follow standard
-overload resolution rules for templates. Therefore, it is possible to have
-default values for arguments, pass by name, varargs, etc.
+在此示例中，自定义编译指示用于描述Nim对象如何映射到关系数据库的模式。
+自定义编译指示可以包含零个或多个参数。
+为了传递多个参数，请使用模板调用语法之一。
+键入所有参数并遵循模板的标准重载决策规则。
+因此，可以为参数，按名称传递，varargs等提供默认值。
 
-Custom pragmas can be used in all locations where ordinary pragmas can be
-specified. It is possible to annotate procs, templates, type and variable
-definitions, statements, etc.
+可以在可以指定普通编译指示的所有位置使用自定义编译指示。
+可以注释过程，模板，类型和变量定义，语句等。
 
-Macros module includes helpers which can be used to simplify custom pragma
-access `hasCustomPragma`, `getCustomPragmaVal`. Please consult macros module
-documentation for details. These macros are no magic, they don't do anything
-you cannot do yourself by walking AST object representation.
+宏模块包括帮助程序，可用于简化自定义编译器访问 `hasCustomPragma` ， `getCustomPragmaVal` 。
+有关详细信息，请参阅宏模块文档。
+这些宏没有魔法，它们不会通过遍历AST对象表示做任何你不能做的事情。
 
-More examples with custom pragmas:
+自定义编译指示的更多示例：
 
-- Better serialization/deserialization control:
+- 更好的序列化/反序列化控制:
 
 .. code-block:: nim
   type MyObj = object
@@ -6040,7 +6027,7 @@ More examples with custom pragmas:
     b {.defaultDeserialize: 5.}: int
     c {.serializationKey: "_c".}: string
 
-- Adopting type for gui inspector in a game engine:
+- 在游戏引擎中采用gui检查的类型：
 
 .. code-block:: nim
   type MyComponent = object
