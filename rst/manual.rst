@@ -991,7 +991,7 @@ Nim中的字符串与字符序列非常相似。
             " years old."
 
 虽然也可以使用 ``$ p.name`` ，但字符串上的 ``$`` 操作什么都不做。
-请注意，我们不能依赖于从 ``int`` 到 ``string` 的自动转换，就像 ``echo`` proc一样。
+请注意，我们不能依赖于从 ``int`` 到 ``string`` 的自动转换，就像 ``echo`` 过程一样。
 
 字符串按字典顺序进行比较。
 所有比较运算符都可用。
@@ -1295,7 +1295,7 @@ cstring类型
   var student = Student(name: "Anton", age: 5, id: 3)
 
 请注意，与元组不同，对象需要字段名称及其值。
-对于 ``ref object`` 类型，``system.new`` 是隐式调用的。
+对于 ``ref object`` 类型， ``system.new`` 是隐式调用的。
 
 
 对象变体
@@ -1515,7 +1515,7 @@ Into:
 
 没有 ``GCunref`` 调用，为 ``d.s`` 字符串分配的内存永远不会被释放。
 该示例还演示了低级编程的两个重要特性： ``sizeof`` proc以字节为单位返回类型或值的大小。
-``cast`` 运算符可以绕过类型系统：编译器被强制处理``alloc0``调用的结果（返回一个无类型的指针），就好像它是 ``ptr Data`` 类型。
+``cast`` 运算符可以绕过类型系统：编译器被强制处理 ``alloc0`` 调用的结果（返回一个无类型的指针），就好像它是 ``ptr Data`` 类型。
 只有在不可避免的情况下才能进行强转：它会破坏类型安全性并且错误可能导致隐蔽的崩溃。
 
 **注意**: 该示例仅起作用，因为内存初始化为零（ ``alloc0`` 而不是 ``alloc`` 执行此操作）： ``d.s`` 因此初始化为二进制零，字符串赋值可以处理。
@@ -2461,7 +2461,7 @@ When语句
 * 属于计算结果为true的表达式的语句由编译器翻译，其他语句不检查语义。
 
 ``when`` 语句启用条件编译技术。
-作为一种特殊的语法扩展，``when`` 结构也可以在 ``object`` 定义中使用。
+作为一种特殊的语法扩展， ``when`` 结构也可以在 ``object`` 定义中使用。
 
 
 When nimvm语句
@@ -2544,12 +2544,12 @@ Block语句
       for j in 0..3:
         if a[j][i] == 7:
           found = true
-          break myblock # 离开两个for循环块
+          break myblock # 跳出两个for循环块
   echo found
 
 块语句是一种将语句分组到（命名） ``block`` 的方法。
-在块内，允许 ``break`` 语句立即离开块。
-``break`` 语句可以包含周围块的名称，以指定要离开的块。
+在块内，允许 ``break`` 语句立即跳出块。
+``break`` 语句可以包含周围块的名称，以指定要跳出的块。
 
 
 Break语句
@@ -2560,9 +2560,9 @@ Break语句
 .. code-block:: nim
   break
 
-``break``语句用于立即离开块。
-如果给出 ``symbol`` ，则它是要离开的封闭块的名称。
-如果不存在，则离开最里面的块。
+``break`` 语句用于立即跳出块。
+如果给出 ``symbol`` ，则它是要跳出的封闭块的名称。
+如果不存在，则跳出最里面的块。
 
 
 While语句
@@ -2579,7 +2579,7 @@ While语句
 
 执行 ``while`` 语句直到 ``expr`` 计算结果为false。
 无尽的循环没有错误。
-``while`` 语句打开一个 '隐式块'，这样它们就可以用 ``break`` 语句离开。
+``while`` 语句打开一个 '隐式块'，这样它们就可以用 ``break`` 语句跳出。
 
 
 Continue语句
@@ -3395,7 +3395,7 @@ Nim中有两种迭代器： *inline* 和 *closure* 迭代器。
 
 内置的 ``system.finished`` 可用于确定迭代器是否已完成其操作;尝试调用已完成其工作的迭代器时不会引发异常。
 
-注意使用``system.finished``容易出错，因为它只在迭代器完成下一次迭代返回 ``true`` ：
+注意使用 ``system.finished`` 容易出错，因为它只在迭代器完成下一次迭代返回 ``true`` ：
 
 .. code-block:: nim
   iterator mycount(a, b: int): int {.closure.} =
@@ -3594,7 +3594,7 @@ Defer语句
 
 可以使用 ``defer`` 语句而不是 ``try finally`` 语句。
 
-当前块中　``defer`` 之后的任何语句都将被视为隐式try块：
+当前块中 ``defer`` 之后的任何语句都将被视为隐式try块：
 
 .. code-block:: nim
     :test: "nim c $1"
@@ -3716,7 +3716,7 @@ Nim支持异常跟踪。 `raises`:idx: 编译器可用于显式定义允许proc/
    但是如果调用的形式是 ``f(...)`` 其中 ``f`` 是当前分析的例程的参数，则忽略它。
    乐观地认为该呼叫没有效果。规则2补偿了这种情况。
 2.假定在一个不是调用本身（而不是nil）的调用中的某些proc类型的每个表达式都以某种方式间接调用，因此它的引发列表被添加到 ``p`` 的引发列表中。
-3.对前向声明或 ``importc`` 编译指示的未知proc ``q`` 的每次调用，假定会引发 ``system.Exception``，除非 ``q`` 有一个明确的 ``raises`` 列表。
+3.对前向声明或 ``importc`` 编译指示的未知proc ``q`` 的每次调用，假定会引发 ``system.Exception`` ，除非 ``q`` 有一个明确的 ``raises`` 列表。
 4.每次对方法 ``m`` 的调用都会被假定为引发 ``system.Exception`` ，除非 ``m`` 有一个明确的 ``raises`` 列表。
 5.对于每个其他调用，分析可以确定一个确切的 ``raises`` 列表。
 6.为了确定 ``raises`` 列表，考虑 ``p`` 的 ``raise`` 和 ``try`` 语句。
@@ -4192,7 +4192,7 @@ Bind语句
 无类型可变参数
 ------------------
 
-除了 ``untyped`` 元类型防止类型检查之外，``varargs[untyped]`` 甚至连参数的数量都可以不确定：
+除了 ``untyped`` 元类型防止类型检查之外， ``varargs[untyped]`` 甚至连参数的数量都可以不确定：
 
 .. code-block:: nim
     :test: "nim c $1"
@@ -4709,7 +4709,7 @@ typeof操作符
 
 **注意**: ``typeof(x)`` 由于历史原因也可以写成 ``type(x)`` ，但不鼓励。
 
-您可以通过从中构造一个``typeof``值来获取给定表达式的类型（在许多其他语言中，这被称为 `typeof`:idx: 操作符):
+您可以通过从中构造一个 ``typeof`` 值来获取给定表达式的类型（在许多其他语言中，这被称为 `typeof`:idx: 操作符):
 
 .. code-block:: nim
 
@@ -4994,8 +4994,8 @@ The `system`:idx: 模块自动导入每个模块。
 
   foo(10)
 
-Variables can also be reordered as well. Variables that are *initialized* (i.e. variables that have their declaration and assignment combined in a single statement) can have their entire initialization statement reordered. 
-Be wary of what code is executed at the top level:
+变量也可以重新排序。 *初始化* 的变量（即将声明和赋值组合在一个语句中的变量）可以重新排序其整个初始化语句。
+小心顶级执行代码：
 
 .. code-block:: nim
   {.experimental: "codeReordering".}
@@ -5209,7 +5209,7 @@ line编译指示
       {.line: instantiationInfo().}:
         raise newException(EAssertionFailed, msg)
 
-如果 ``line``编译指示与参数一起使用，则参数需要是 ``tuple[filename: string, line: int]`` 。 如果在没有参数的情况下使用它，则使用 ``system.InstantiationInfo()`` 。
+如果 ``line`` 编译指示与参数一起使用，则参数需要是 ``tuple[filename: string, line: int]`` 。 如果在没有参数的情况下使用它，则使用 ``system.InstantiationInfo()`` 。
 
 
 linearScanEnd 编译指示
@@ -5277,7 +5277,7 @@ computedGoto编译指示
   vm()
 
 
-如示例所示，``computedGoto`` 对解释器最有用。
+如示例所示， ``computedGoto`` 对解释器最有用。
 如果底层后端（C编译器）不支持计算的goto扩展，则简单地忽略编译指示。
 
 
@@ -5307,7 +5307,7 @@ immediate编译指示已经过时了。请参阅 `类型化和无类型形参`_.
 
 编译选项编译指示
 --------------------------
-此处列出的pragma可用于覆盖proc / method / converter的代码生成选项。
+此处列出的编译指示可用于覆盖proc/method/converter的代码生成选项。
 
 该实现目前提供以下可能的选项（稍后可以添加各种其他选项）。
 
@@ -5447,7 +5447,7 @@ experimental编译指示
 
 作为顶级语句，实验编译指示为其启用的模块的其余部分启用了一项功能。
 这对于跨越模块范围的宏和通用实例化是有问题的。
-目前这些用法必须放在``.push/pop``环境中：
+目前这些用法必须放在 ``.push/pop`` 环境中：
 
 .. code-block:: nim
 
@@ -5763,7 +5763,7 @@ ImportCpp编译指示
   x = SystemManager::getSubsystem<System::Input>()
 
 
-- ``#@``是一个支持 ``cnew`` 操作的特例。
+- ``#@`` 是一个支持 ``cnew`` 操作的特例。
   这是必需的，以便直接内联调用表达式，而无需通过临时位置。
   这只是为了规避当前代码生成器的限制。
 
@@ -6061,7 +6061,7 @@ Importc编译指示
 .. code-block:: Nim
   proc p(s: cstring) {.importc: "prefix$1".}
 
-在示例中，``p`` 的外部名称设置为 ``prefixp`` 。
+在示例中， ``p`` 的外部名称设置为 ``prefixp`` 。
 只有 ``$1`` 可用，文字美元符号必须写成 ``$$`` 。
 
 
@@ -6084,7 +6084,7 @@ Exportc编译指示
   proc p(s: string) {.exportc: "prefix$1".} =
     echo s
 
-在示例中，``p`` 的外部名称设置为 ``prefixp`` 。
+在示例中， ``p`` 的外部名称设置为 ``prefixp`` 。
 只有 ``$1`` 可用，文字美元符号必须写成 ``$$`` 。
 
 
@@ -6097,7 +6097,7 @@ Extern编译指示
   proc p(s: string) {.extern: "prefix$1".} =
     echo s
 
-在示例中，``p`` 的外部名称设置为 ``prefixp`` 。只有 ``$1`` 可用，文字美元符号必须写成 ``$$`` 。
+在示例中， ``p`` 的外部名称设置为 ``prefixp`` 。只有 ``$1`` 可用，文字美元符号必须写成 ``$$`` 。
 
 
 
