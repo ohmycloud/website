@@ -101,7 +101,7 @@ Nim `程序`:idx: 由一个或多个包含Nim代码的文本 `源文件`:idx: �
 我们将在本文档后面看到，宏调用不仅需要这种交错，而且还会产生语义分析不能完全从上到下，从左到右进行的情况。
 
 
-词汇分析
+词法分析
 ================
 
 编码
@@ -493,7 +493,7 @@ Nim允许用户定义的运算符。运算符是以下字符的任意组合
 ======
 
 
-本节列出了Nim的标准语法。解析器如何处理缩进已在 `Lexical Analysis`_ 部分中描述。
+本节列出了Nim的标准语法。解析器如何处理缩进已在 `词法分析`_ 部分中描述。
 
 
 Nim允许用户可定义的运算符。二元运算符具有11个不同的优先级。
@@ -638,7 +638,7 @@ Nim允许用户可定义的运算符。二元运算符具有11个不同的优先
 
 访问和修改编译时变量的能力增加了常量表达式的灵活性。
 例如，下面的代码在 **编译时** 打印Fibonacci数列的开头。
-（这是对定义常量的灵活性的证明，而不是解决此问题的推荐样式！）
+（这是对定义常量的灵活性的证明，而不是解决此问题的推荐样式。）
 
 .. code-block:: nim
     :test: "nim c $1"
@@ -797,7 +797,7 @@ NaN不属于任何浮点类型的子范围。
 将任何其他值分配给类型为 ``Subrange`` 的变量是检查的运行时错误（如果可以在语义分析期间确定，则为静态错误）。
 允许从基本类型到其子类型之一（反之亦然）的分配。
 
-子范围类型与其基类型具有相同的大小（Subrange示例中的 ``int`` ）。
+子范围类型与其基类型具有相同的大小（子范围示例中的 ``int`` ）。
 
 
 预定义浮点类型
@@ -1348,7 +1348,7 @@ cstring类型
 
 对象声明中 ``case`` 的语法紧跟着 ``case`` 语句的语法： ``case`` 部分中的分支也可以缩进。
 
-在示例中，``kind`` 字段称为 `鉴别字段`:idx: :
+在示例中， ``kind`` 字段称为 `鉴别字段`:idx: :
 为安全起见，不能对其进行地址限制，并且对其赋值受到限制：新值不得导致活动对象分支发生变化。 
 此外，在对象构造期间指定特定分支的字段时，必须将相应的鉴别字段值指定为常量表达式。
 
@@ -1402,7 +1402,7 @@ Nim区分 `追踪`:idx:和 `未追踪`:idx: 引用。
 然而对于某些访问硬件的低级操作，未追踪引用是不可避免的。
 
 使用 **ref** 关键字声明追踪引用，使用 **ptr** 关键字声明未追踪引用。
-通常，`ptr T` 可以隐式转换为 `pointer` 类型。
+通常， `ptr T` 可以隐式转换为 `pointer` 类型。
 
 空的下标 ``[]`` 表示法可以用来取代引用， ``addr`` 程序返回一个对象的地址。
 地址始终是未经过引用的参考。
@@ -1771,7 +1771,7 @@ Distinct类型
     username: string
 
   db.query("SELECT FROM users WHERE name = '$1'" % username)
-  # 静态错误：`query` 需要一个SQL字符串！
+  # 静态错误：`query` 需要一个SQL字符串。
 
 
 它是抽象类型的基本属性，它们 *并不* 意味着抽象类型与其基类型之间的子类型关系。
@@ -2020,8 +2020,8 @@ args中的每个arg都需要匹配。参数可以匹配的方式有多种不同�
 设 ``f`` 是形式参数的类型， ``a`` 是参数的类型。
 
 1. 准确匹配: ``a`` 和 ``f`` 是相同类型。
-2. 字面匹配: ``a`` is an integer literal of value ``v`` and ``f`` is a signed or unsigned integer type and ``v`` is in ``f``'s range. 
-   Or:  ``a`` is a floating point literal of value ``v`` and ``f`` is a floating point type and ``v`` is in ``f``'s range.
+2. 字面匹配: ``a`` 是值为 ``v`` 的整型字面值， ``f`` 是有符号或无符号整型 ``v`` 在 ``f`` 的范围里. 
+   或:  ``a`` 是值为 ``v``的浮点字面值， ``f`` 是浮点类型 ``v`` 在 ``f`` 的范围里。
 3. 泛型匹配: ``f`` 是泛型类型且 ``a`` 匹配, 例如 ``a`` 是 ``int`` 且 ``f`` 是泛型限制 (受限) 形参类型 (像 ``[T]`` 或 ``[T: int|char]``.
 4. 子范围或子类型匹配： ``a`` is a ``range[T]`` and ``T`` matches ``f`` exactly. Or: ``a`` is a subtype of ``f``.
 5. 整数转换匹配: ``a`` 可转换为 ``f`` 且 ``f`` 和 ``a`` 是同样的整数或浮点类型。
@@ -2030,8 +2030,7 @@ args中的每个arg都需要匹配。参数可以匹配的方式有多种不同�
 这些匹配类别具有优先级：完全匹配优于字面值匹配，并且优于通用匹配等。
 在下面的 ``count(p, m)`` 计算 ``m`` 匹配过程 ``p`` 的匹配数。
 
-A routine ``p`` matches better than a routine ``q`` if the following
-algorithm returns true::
+如果下列算法返回真，例程 ``p`` 比 ``q`` 更匹配：
 
   for each matching category m in ["exact match", "literal match",
                                   "generic match", "subtype match",
@@ -2661,7 +2660,7 @@ Instead of:
   proc bar(c: Context; n: Node, counter: int) = ...
   proc baz(c: Context; n: Node) = ...
 
-可以告诉编译器关于名称 ``c`` 的参数应默认键入 ``Context`` ，``n`` 应该默认为 ``Node`` 等的约定：
+可以告诉编译器关于名称 ``c`` 的参数应默认键入 ``Context`` ， ``n`` 应该默认为 ``Node`` 等的约定：
 
 .. code-block:: nim
   using
@@ -2821,7 +2820,7 @@ unsafeAddr操作符
 过程
 ==========
 
-大多数编程语言称之为 `methods`:idx: 或 `functions`:idx: 在Nim中称为 `过程`:idx: 。
+大多数编程语言称之为 `方法`:idx: 或 `函数`:idx: 在Nim中称为 `过程`:idx: 。
 过程声明由标识符，零个或多个形式参数，返回值类型和代码块组成。
 
 正式参数声明为由逗号或分号分隔的标识符列表。
@@ -3163,7 +3162,7 @@ proc，转换器或迭代器可能返回一个 ``var`` 类型，这意味着返�
 .. code-block:: nim
   proc writeAccessToG(): var int =
     var g = 0
-    result = g # Error!
+    result = g # 错误!
 
 For iterators, a component of a tuple return type can have a ``var`` type too:
 
@@ -3420,7 +3419,7 @@ Nim中有两种迭代器： *inline* 和 *closure* 迭代器。
   var c = mycount # 实例化迭代器
   while true:
     let value = c(1, 3)
-    if finished(c): break # 并且丢弃 'value'!
+    if finished(c): break # 并且丢弃 'value'。
     echo value
 
 它用于迭代器返回一对 ``(value，done)`` 和 ``finished`` 用于访问隐藏的 ``done`` 字段。
@@ -3732,7 +3731,7 @@ Nim支持异常跟踪。 `raises`:idx: 编译器可用于显式定义允许proc/
     raise newException(IOError, "IO")
 
   proc use() {.raises: [].} =
-    # 不能编译! 可能引发IOError!
+    # 不能编译， 可能引发IOError。
     noRaise(doRaise)
 
 因此，在许多情况下，回调不会导致编译器在其效果分析中过于保守。
@@ -4635,8 +4634,8 @@ typedesc[T]
 这些值仅在编译阶段存在，但由于所有值必须具有类型，因此 ``typedesc`` 被视为其特殊类型。
 
 ``typedesc`` 就像一个通用类型。例如，符号 ``int`` 的类型是 ``typedesc [int]`` 。
-就像常规泛型类型一样，当泛型参数被省略时，``typedesc``表示所有类型的类型类。
-作为一种语法方便，您还可以使用``typedesc``作为修饰符。
+就像常规泛型类型一样，当泛型参数被省略时， ``typedesc`` 表示所有类型的类型类。
+作为一种语法方便，您还可以使用 ``typedesc`` 作为修饰符。
 
 具有 ``typedesc`` 参数的过程被认为是隐式通用的。
 它们将针对提供的类型的每个唯一组合进行实例化，并且在proc的主体内，每个参数的名称将引用绑定的具体类型：
@@ -5302,7 +5301,7 @@ unroll编译指示
 immediate编译指示
 ----------------
 
-immediate编译指示已经过时了。请参阅 `类型化和无类型形参`_.
+immediate编译指示已经弃用。请参阅 `类型化和无类型形参`_.
 
 
 编译选项编译指示
@@ -5314,27 +5313,16 @@ immediate编译指示已经过时了。请参阅 `类型化和无类型形参`_.
 ===============  ===============  ============================================
 pragma           allowed values   description
 ===============  ===============  ============================================
-checks           on|off           Turns the code generation for all runtime
-                                  checks on or off.
-boundChecks      on|off           Turns the code generation for array bound
-                                  checks on or off.
-overflowChecks   on|off           Turns the code generation for over- or
-                                  underflow checks on or off.
-nilChecks        on|off           Turns the code generation for nil pointer
-                                  checks on or off.
-assertions       on|off           Turns the code generation for assertions
-                                  on or off.
-warnings         on|off           Turns the warning messages of the compiler
-                                  on or off.
-hints            on|off           Turns the hint messages of the compiler
-                                  on or off.
-optimization     none|speed|size  Optimize the code for speed or size, or
-                                  disable optimization.
-patterns         on|off           Turns the term rewriting templates/macros
-                                  on or off.
-callconv         cdecl|...        Specifies the default calling convention for
-                                  all procedures (and procedure types) that
-                                  follow.
+checks           on|off           打开或关闭所有运行时检查的代码生成。
+boundChecks      on|off           打开或关闭数组绑定检查的代码生成。
+overflowChecks   on|off           打开或关闭上溢或下溢检查的代码生成。
+nilChecks        on|off           打开或关闭nil指针检查的代码生成。
+assertions       on|off           打开或关闭断言的代码生成。
+warnings         on|off           打开或关闭编译器的警告消息。
+hints            on|off           打开或关闭编译器的提示消息。
+optimization     none|speed|size  优化代码的速度或大小，或禁用优化。
+patterns         on|off           打开或关闭术语重写模板/宏。
+callconv         cdecl|...        指定后面的所有过程（和过程类型）的默认调用约定。
 ===============  ===============  ============================================
 
 示例：
@@ -5598,7 +5586,7 @@ Emit编译指示
 
 ``emit`` 编译指示可用于直接影响编译器代码生成器的输出。
 因此，它使您的代码无法移植到其他代码生成器/后端。
-它的使用非常不鼓励的！但是，它对于与 `C++`:idx: 或 `Objective C`:idx: 代码非常有用。
+它的使用非常不鼓励的。但是，它对于与 `C++`:idx: 或 `Objective C`:idx: 代码非常有用。
 
 示例：
 
@@ -5782,7 +5770,7 @@ ImportCpp编译指示
 .. code-block:: C
   x = new Foo(3, 4)
 
-但是，根据用例，``new Foo`` 也可以这样包装：
+但是，根据用例， ``new Foo`` 也可以这样包装：
 
 .. code-block:: nim
   proc newFoo(a, b: cint): ptr Foo {.importcpp: "new Foo(@)".}
@@ -5805,7 +5793,7 @@ ImportCpp编译指示
 封装析构函数
 ~~~~~~~~~~~~~~~~~~~~
 封装destruct由于Nim直接生成C++，所以任何析构函数都由C++编译器在作用域出口处隐式调用。
-这意味着通常人们可以完全没有封装析构函数！
+这意味着通常人们可以完全没有封装析构函数。
 但是当需要显式调用它时，需要将其封装起来。
 模式语言提供了所需的一切：
 
@@ -6280,5 +6268,5 @@ Threadvar编译指示
 线程和异常
 ----------------------
 
-线程和异常之间的交互很简单：一个线程中的 *处理过的* 异常不会影响任何其他线程。但是，一个线程中的 *未处理的* 异常终止整个 *进程* ！
+线程和异常之间的交互很简单：一个线程中的 *处理过的* 异常不会影响任何其他线程。但是，一个线程中的 *未处理的* 异常终止整个 *进程* 。
 
