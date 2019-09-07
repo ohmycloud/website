@@ -3,7 +3,7 @@ title: "首个Nim全栈项目"
 author: sheldon
 ---
 
-首个Nim全栈项目
+首个 Nim 全栈项目
 
     Nim is a statically typed compiled systems programming language. 
     It combines successful concepts from mature languages like Python,Ada and Modula.
@@ -226,7 +226,7 @@ proc dodraw(kxi: KaraxInstance) =
 然后获取`kxi.rootId`的DOM节点作为旧节点与新的虚拟DOM树进行diff算法，
 得到补丁集，
 根据等价、相似、不同三种结果，
-对节点进行相应更新 。
+对节点进行相应更新。
 
 ### Web后端
 
