@@ -5645,7 +5645,7 @@ ImportCpp编译指示
 和 `importc pragma for C <#foreign-function-interface-importc-pragma>`_ 类似, ``importcpp`` 编译指示一般可以用于引入 `C++`:idx: 方法或C++符号。 
 生成的代码会使用C++方法调用的语法: ``obj->method(arg)`` 。
 
-结合 ``header`` 和 ``emit`` 编译指示，这允许与C++库的 *草率* 接口： 
+结合 ``header`` 和 ``emit`` 编译指示，这允许与C++库的接口： 
 
 .. code-block:: Nim
   # 和C++引擎对接的反例... ;-)
@@ -5681,7 +5681,7 @@ ImportCpp编译指示
 命名空间
 ~~~~~~~~~~
 
-*草率接口* 示例使用 ``.emit`` 来生成 ``using namespace`` 声明。
+*接口* 示例使用 ``.emit`` 来生成 ``using namespace`` 声明。
 通过 ``命名空间::标识符`` 符号来引用导入的名称通常要好得多：
 
 .. code-block:: nim
@@ -5846,7 +5846,7 @@ ImportObjC编译指示
 和 `importc pragma for C <#foreign-function-interface-importc-pragma>`_ 类似, 
 ``importobjc`` 编译指示可用于导入 `Objective C`:idx: 方法。  
 生成的代码使用Objective C 方法调用语法: ``[obj method param1: arg]``.
-除了 ``header`` 和 ``emit`` 编译指示之外，这允许与Objective C中编写的库的 *草率* 对接：
+除了 ``header`` 和 ``emit`` 编译指示之外，这允许与Objective C中编写的库的对接：
 
 .. code-block:: Nim
   # 和GNUStep对接的反例 ...
@@ -6040,7 +6040,7 @@ Importc编译指示
 .. code-block::
   proc printf(formatstr: cstring) {.header: "<stdio.h>", importc: "printf", varargs.}
 
-请注意，此pragma有点用词不当：其他后端确实在同一名称下提供相同的功能。
+请注意，此编译指示有点用词不当：其他后端确实在同一名称下提供相同的功能。
 
 此外，如果一个人正在与C++或Objective-C对接，可以使用 `ImportCpp pragma <manual.html＃implementation-specific-pragmas-importcpp-pragma>`_ 或 `importObjC pragma <manual.html＃implementation-specific-pragmas- importobjc-pragma>`_ 。
 
@@ -6064,7 +6064,7 @@ Exportc编译指示
 .. code-block:: Nim
   proc callme(formatstr: cstring) {.exportc: "callMe", varargs.}
 
-请注意，此pragma有点用词不当：其他后端确实在同一名称下提供相同的功能。
+请注意，此编译指示有点用词不当：其他后端确实在同一名称下提供相同的功能。
 
 传递给 ``exportc`` 的字符串文字可以是格式字符串：
 
