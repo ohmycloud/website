@@ -5074,7 +5074,7 @@ noSideEffect编译指示
 
 作为一种特殊的语义规则，内置的 `debugEcho <system.html#debugEcho>`_ 没有副作用，因此它可以用于调试标记为 ``noSideEffect`` 的例程。
 
-``func`` 是proc的语法糖，没有副作用：
+``func`` 是没有副作用的proc语法糖。
 
 .. code-block:: nim
   func `+` (x, y: int): int
