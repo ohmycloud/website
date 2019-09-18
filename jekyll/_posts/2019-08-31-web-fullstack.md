@@ -25,9 +25,9 @@ Nim中文网站：[https://nim-lang-cn.org/](https://nim-lang-cn.org/)
     
     2.2 [使用Javascript模块](#使用Javascript模块)
     
-    2.3 [Karax的虚拟DOM实现](#Karax的虚拟DOM实现)
+    2.3 [Karax的虚拟DOM实现](#karax的虚拟DOM实现)
     
-    2.4 [Web后端](#Web后端)
+    2.4 [Web后端](#web后端)
 
 ## 背景
 2015年接触到Nim的时候被它既有高级抽象又能编译成C的特性吸引，
@@ -151,10 +151,10 @@ Nim编译成的Javascript符合ECMAScript3规范，新规范不被支持。
 Karax将所有Nim代码编译成一个js文件，通过
 `<script src="xxx.js"></script>`，引入到index.html中。
 
-### Karax的虚拟DOM实现
+### karax的虚拟DOM实现
 
 ```nim
-# Karax虚拟DOM的实现入口 ,另一个setRenderer是没有RouterData的重载方法
+# Karax虚拟DOM的实现入口，另一个setRenderer是没有RouterData的重载方法
 var
   kxi*: KaraxInstance
   ...
@@ -228,7 +228,7 @@ proc dodraw(kxi: KaraxInstance) =
 根据等价、相似、不同三种结果，
 对节点进行相应更新。
 
-### Web后端
+### web后端
 
 Nim的Web后端可以使用`Jester`框架，
 支持多线程异步，
@@ -240,9 +240,4 @@ Nim的Web后端可以使用`Jester`框架，
 这里简单介绍了 *如何使用Javascript模块的类型*和*库函数*、*立即模式*，
 根据源码讲解了*Karax虚拟DOM的实现机制*等理论知识，
 后面将讲解这些特性在应用中的实践。
-
-
-
-
-
 
