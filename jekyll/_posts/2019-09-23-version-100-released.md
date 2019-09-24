@@ -78,7 +78,7 @@ Nim构建了一个温暖和热情的 [社区](/community.html)，
 
 ## 安装了之前版本的老用户
 
-如果有使用 `choosenim` 安装了之前Nim版本的用户，
+如果有使用 `choosenim` 安装了之前 `Nim` 版本的用户，
 简单如下：
 
 ```bash
@@ -87,7 +87,7 @@ $ choosenim update stable
 
 
 
-# 奉献者们
+# 贡献者们
 
 经年累月，
 有超过500人向Nim的代码贡献过，
