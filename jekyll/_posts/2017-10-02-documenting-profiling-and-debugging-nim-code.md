@@ -208,45 +208,41 @@ image::ch05_math_docs.png[]
 有关如何使用注释和生成文档的更多实例，请查看
 https://github.com/nim-lang/Nim/tree/devel/lib/pure[它的源码]].
 
-== Profiling your code
+== 分析代码
 
-Profiling an application is the act of analysing it at runtime to determine
-what it spends its time doing. For example, in which procedures it spends
-most of its time, or how many times each procedure is called.
-These measurements help to find areas of code which need optimisation.
-Occasionally they can also help you find bugs in your application.
+*分析* 应用，是指在应用运行时对其进行分析，以确定其所花费的时间。
+像：它在哪个过程中花费时间最多啦、或者每个过程被调用了多少次之类的。
+这些数值可以帮助你找到需要优化的代码区域。
+有时它们还可以帮助您在应用程序中发现错误。
 
-There is a large amount of profilers available for the Nim programming language.
-This may come as a surprise because Nim is a relatively new
-language. The fact is that most of these profilers have not been created
-specifically for Nim but for C. C profilers support
-Nim applications because Nim compiles to C. There are only a few
-things that you need to know to take advantage of such profilers.
+*Nim* 语言其实有很多很多能用的分析器。
+挺惊人吧？毕竟 *Nim* 还是一门挺新的语言。
+其实吧，这里的大多数分析器并不是专门给 *Nim* 创建的，而是给 *C* 。
+*C* 分析器支持 *Nim* 应用，因为 *Nim* 可以编译为 *C* 。
+要想用好这些分析器，你只需要了解这几件事。
 
-There is one profiler that is actually included with the Nim compiler, it is
-so far the only profiler designed for profiling Nim applications. Let's take
-a look at it before moving to the C profilers.
+事实上 *Nim* 编译器包含了一个探查器，
+它是目前来说唯一一个用于对 *Nim* 应用程序进行性能分析的分析器。 
+在转到 *C* 分析器之前，让我们看一下它。
 
-=== Profiling with nimprof
+=== 使用 *nimprof* 进行性能分析
 
-The Embedded Stack Trace Profiler (ESTP), or sometimes just called NimProf, is
-a Nim profiler included with the standard Nim distribution. To activate this
-profiler you only need to follow the following steps:
+嵌入式堆栈跟踪分析器（*ESTP*）（有时也称为 *NimProf*）是标准 *Nim* 发行版中附带的 *Nim* 分析器。
+要激活这个分析器，您只需执行以下步骤：
 
-1. Import the `nimprof` module in your program's main Nim module (the one you
-will be compiling),
-2. Compile your program with the `--profiler:on` and `stacktrace:on` flags.
-3. Run your program as usual.
+1. 在你的程序的 *Nim* 主模块（将要编译的模块）中导入 `nimprof` 模块，
+2. 使用 `--profiler:on` 和 `stacktrace:on` 标志编译程序。
+3. 正常运行它。
 
-.Application speed
-NOTE: As a result of the profiling your application will run slower, this is
-      because the profiler needs to analyse your application's execution at
-      runtime which has an obvious overhead.
+.应用速度
+NOTE: 分析你的应用程序时，运行速度会变慢，
+      这是因为分析器需要在运行时分析应用程序的执行情况，
+      这会带来明显的开销。
 
-Consider the following code listing.
+看一眼下面的代码。
 
 [[listing_1_4]]
-.A simple profiler example
+.简单的分析器示例
 ```nim
 import nimprof <1>
 import strutils <2>
@@ -273,26 +269,24 @@ proc analyse(x: string) =
 for i in 0 .. 10000: <5>
   analyse("uyguhijkmnbdv44354gasuygiuiolknchyqudsayd12635uha")
 ```
-<1> The `nimprof` module is essential in order for the profiler to work.
-<2> The `strutils` module defines the `Letters` set.
-<3> Each character in the string `x` is iterated over, if a character is a
-    letter then `ab` is called, if it's a number then `num` is called, and
-    if it's something else then `diff` is called.
-<4> The `\0` signifies the end of the string, we break out of the loop here.
-<5> We perform the analysis 10 thousand times in order to let the profiler
-    measure reliably.
+<1> 有了 `nimprof` 模块，探查器才能正常工作，所以该模块至关重要。
+<2> `strutils` 模块定义了 `Letters` 集合.
+<3> 字符串 `x` 中的每个字符都被遍历，如果这个字符是字母，那么调用 `ab` ；
+    如果是数字，就调用 `num` ；
+    其他情况调用 `diff` 。
+<4> `\0` 表示到了字符串的结尾，我们在这停止循环。
+<5> 为了使 *Profiler* 的结果更加可靠，我们进行了1万次分析。
 
-Save it as `main.nim`, then compile it by executing
-`nim c --profiler:on --stacktrace:on main.nim`. The example should compile
-successfully. You may then run it. After the program has finished executing
-you should see a message similar to "writing profile_results.txt..." appear
-in your terminal window.
-The `main` program should create a `profile_results.txt` file in your current
-working directory. The file's contents should be similar to those in
-<<listing_1_5,listing 1.5>>.
+将其另存为 `main.nim` ，
+然后通过执行 `nim c --profiler:on --stacktrace:on main.nim` 来编译。
+这个例子应该能成功编译。 然后，你可以运行它。
+程序执行完毕后，您应该在终端窗口中看到一条类似于“writing profile_results.txt...”的消息。
+`main` 程序会在你当前的工作目录中创建一个 `profile_results.txt` 文件，
+文件的内容看起来应该和
+<<listing_1_5,代码 1.5>>差不多
 
 [[listing_1_5]]
-.The profiling results
+.分析结果
 ```
 total executions of each stack trace:
 Entry: 1/4 Calls: 89/195 = 45.64% [sum: 89; 89/195 = 45.64%]
@@ -310,33 +304,25 @@ Entry: 4/4 Calls: 3/195 = 1.54% [sum: 195; 195/195 = 100.00%]
   main 195/195 = 100.00%
 ```
 
-While the application is running the profiler takes multiple snapshots of the
-line of code that is currently being executed. It notes the stack trace which
-tells it how the application ended up executing that piece of code. The most
-common code paths are then reported in `profile_results.txt`.
+在应用程序运行时，分析器会为当前正在执行的代码行拍摄多个快照。 
+它记录了应用程序最终如何执行那段代码堆栈跟踪。
+然后记录在最常见的路径 `profile_results.txt` 中。
 
-In the report shown in <<listing_1_5,listing 1.5>>,
-the profiler has made 195 snapshots.
-It found that the line of code being executed was inside the `analyse`
-procedure in 45.64% of those snapshots. In 42.56% of those snapshots it was
-in the `ab` procedure, this makes sense because the string passed to
-`analyse` is mostly made up of letters. Numbers are less popular and so
-the execution of the `num` procedure only makes up 10.26% of those snapshots.
-The profiler did not pick up any calls to the `diff` procedure because there
-are no other characters in the `x` string. Try adding some punctuation to
-the string passed to the `analyse` procedure and you will find that the
-profiler results then show the `diff` procedure.
+在 <<listing_1_5,代码 1.5>> 所示的报告中,
+分析器制作了195个快照。
+它发现正在执行的过程 `analyse` 中的代码行在那些快照中占了45.64%。
+42.56%的快照调用了 `ab` 过程，没毛病，因为传递给 `analyse` 的字符串主要由字母组成。
+数字没那么多，所以 `num` 过程的执行仅占了这些快照的10.26%。
+分析器没有监测到 `diff` 过程的调用，因为在字符串 `x` 中没有其他字符。
+试着在传递给 `analyse` 过程的字符串中添加一些标点符号，
+你会发现分析器监测到并显示出来了 `diff` 过程。
 
-It is easy to determine where the bulk of the processing takes place in
-<<listing_1_4,listing 1.4>> without the use of a profiler.
-But for more complex modules
-and applications the Nim profiler is great for determining which
-procedures are most used.
+在不使用分析器的情况下，很容易确定 <<listing_1_4,代码 1.4>> 中大部分程序处理了的位置。
+但是对于更复杂的模块和应用，*Nim Profiler* 非常适合确定哪些程序最常用。
 
-.Memory usage
-TIP: The Nim profiler can also be used for measuring memory usage, simply
-     compile your application with the `--profiler:off`, `--stackTrace:on`,
-     and `-d:memProfiler` flags.
+.内存使用情况
+TIP: *Nim* 分析器也可用于测量内存使用情况，
+    只需要使用`--profiler:off`、`--stackTrace:on`、和 `-d:memProfiler` 标志编译你的应用即可。
 
 === Profiling with Valgrind
 
