@@ -1,9 +1,9 @@
 ---
 author: Dominik Picheta
-excerpt: This guide discusses some of the useful tools for documenting, profiling and debugging Nim code.
+excerpt: 本指南讨论了一些用于记录、分析和调试nim代码的实用工具。
 ---
 
-= A guide to documenting, profiling and debugging Nim code
+= nim代码的文档化、分析和调试指南
 :figure-caption: Figure 1.
 :listing-caption: Listing 1.
 :table-caption: Table 1.
@@ -17,18 +17,20 @@ excerpt: This guide discusses some of the useful tools for documenting, profilin
 <table class="hackytable">
   <tr>
   <td width="200px">
-  <img src="https://nim-lang.org/assets/img/nim_in_action_cover.jpg"/>
+  <img src="{{ site.baseurl }}/assets/img/nim_in_action_cover.jpg"/>
   </td>
   <td style="padding-left: 10pt;">
 +++
-This small guide was originally written for
-https://book.picheta.me[Nim in Action]. It didn't end up in the book
-due to size constraints. Nim in Action is written in a similar
-style to this guide, check it out for more in-depth information about the
-Nim programming language.
+这一小篇手册最初是为了
+https://book.picheta.me[Nim in Action]写的。
+
+由于篇幅限制，书中并没有收录。 
+*Nim in Action* 的编写方式和这个指南很类似，
+你可以把这本书买来（或找来）看看，
+以便更加深入地了解 *Nim* 语言。
 
 .Discount
-TIP: Get 37% off Nim in Action with code `fccpicheta`.
+TIP: 使用优惠码 `fccpicheta` 可以获得六四折优惠。
 +++
 </td>
 </tr>
@@ -37,108 +39,107 @@ TIP: Get 37% off Nim in Action with code `fccpicheta`.
 ****
 
 
+本手册将会和你一起探讨一些实用的工具，用以记录、分析和调试 *Nim* 代码。
+我将会介绍如下内容:
 
-This guide will discuss some of the useful tools for documenting, profiling
-and debugging Nim code. Some of the things you will be introduced to include:
+* 在 *Nim* 的文档注释中使用的 *reStructuredText* 语言（RST）
+* *Nim* 性能和内存使用情况分析器
+* 将 *GDB/LLDB* 与 *Nim* 一起使用
 
-* The reStructuredText language which is used in Nim's doc comments
-* The Nim performance and memory usage profiler
-* Using GDB/LLDB with Nim
+请务必准备好nim编译器，
+并按照本指南中的说明进行操作，
+以便达到最佳效果。
 
-Be sure to have a Nim compiler ready and follow along with the instructions
-in this guide to get the most out of it.
+== 代码文档
 
-== Documenting your code
+给代码写注释和文档非常重要！
+尤其是在直接查看库的 *api* 甚至软件的源码时。
+它能够解释软件中一些可能不是很明显细节，
 
-Code documentation is important. It explains details about software which
-may not be immediately apparent when looking at the API of libraries or even
-the software's source code.
+有很多种方式来达到这个效果。
+比如你可能已经知道了，
+*Nim* 像很多语言那样支持注释。
+注释是源码的说明解释，
+让代码能更容易地被理解。
 
-There are many ways to document code. You like already know that,
-like many programming languages, Nim supports comments. Comments act as
-an annotation for source code, a way to make code easier to understand.
-
-In Nim a single-line comment is delimited by a hash character `&#35;`.
-Multi-line comments can be delimited by `&#35;[` and `]&#35;`.
-<<list_1_1,Listing 1.1>> shows an example of both.
+在nim中，单行注释由井号 `&#35;` 分隔。
+多行注释由 `&#35;[` and `]&#35;` 包裹起来。
+在<<list_1_1,代码 1.1>> 中，分别进行了这两者的示例。
 
 [[list_1_1]]
-.Comments in Nim
+.*Nim* 中的注释
 ```nim
 var x = 5 # Assign 5 to x.
 #[multi-
   line      <1>
   comment]#
 ```
-<1> This syntax is still relatively new and so most syntax highlighters
-    are not aware of it.
+<1> 这种语法还算是挺新的，所以一般都不会支持 *Nim* 的语法高亮。
 
-Nim also supports a special type of comment, called a documentation comment.
-This type of comment is processed by Nim's documentation generator. Any comment
-using two hash characters `&#35;&#35;` is a documentation comment.
+*Nim* 也提供了一种叫做 *“文档注释”* 的特殊注释类型。
+这种类型的注释由nim的文档生成器处理。
+只要用两个井号 `&#35;&#35;` 写的注释都是文档注释。
+
 
 [[list_1_2]]
-.Example showing a simple documentation comment
+.一个简单的文档注释的例子
 ```nim
-## This is a *documentation comment* for module ``test``.
+## 这是``test`` 模块的 *文档注释* .
 ```
 
-<<list_1_2,Listing 1.2>> shows a very simple documentation comment.
-The Nim compiler
-includes a command to generate documentation for a given module. Save the code
-in <<list_1_2,Listing 1.2>> as `test.nim` somewhere on your file system then
-execute `nim doc test.nim`. A `test.html` file should be produced beside
-your `test.nim` file. Open it in your favourite web browser to see the
-generated HTML. You should see something similar to the screenshot in
-<<fig_1_1,figure 1.1>>.
+<<list_1_2,代码 1.2>> 展示了一个非常简单的文档注释
+*Nim* 编译器包含了一个能给指定模块生成文档的命令。
+实际代码在 <<list_1_2,代码 1.2>> 中，
+比如说你电脑里有个 `test.nim` ，然后你可以执行 `nim doc test.nim`。
+一般会在你的 `test.nim` 文件旁边生成一个 `test.html`。
+在你最爱的那个浏览器中打开它，就能看到生成出来的 *HTML*
+就像 <<fig_1_1,图 1.1>> 中的截图这样：
 
 [[fig_1_1]]
-.HTML documentation for the `test.nim` module
+.给 `test.nim` 模块生成的文档
 image::ch05_docgen.png[]
 
-Note the different styles of text seen in the screenshot. The text
-"documentation comment" is in italics because it is surrounded by asterisks
-(`*`) in the doc comment. The "test" is surrounded by two backticks which makes
-the font monospaced, useful when talking about identifiers such as variable
-names.
+注意截图和你看到的文本样式可能会有差异，请以实际效果为准:)。
+“documentation comment”这俩字是斜体的，
+因为在文档注释中是用星号(`*`)包裹起来的。
+而 “test” 是用两个反引号包起来的，
+这样能显得字体是等距的，
+在讨论诸如变量名之类的标识符时很有用。
 
-These special delimiters are part of the reStructuredText markup language
-which the documentation generator supports.
-The documentation generator reads the file you specify on the command-line,
-it finds all the documentation comments and then goes through each of them.
-Each documentation comment is parsed using a
-reStructuredText parser. The documentation generator then generates HTML
-based on the reStructuredText markup that it parses.
+这些特殊的符号是文档生成器支持的 *reStructuredText* 标记语言的一小部分玩法。
+文档生成器先解读你在命令行中指定的文件，
+然后找到并逐一检查其中的所有文档注释。
+每个文档注释都被 *reStructuredText* 解析器所解析。
+然后文档生成器基于他解析的 *reStructuredText* 标记生成 *HTML*。
 
-<<table_1_1,Table 1.1>> shows some example syntax of the reStructuredText
+<<table_1_1,表 1.1>>列出了 *reStructuredText* 的一些语法。
 markup language.
 
 [[table_1_1]]
-.reStructuredText syntax examples
+.*reStructuredText* 语法示例
 [options="header"]
 |===
 
-| Syntax | Result | Usage
+| 语法 | 效果 | 用途
 
-| `\*italics*` | _italics_ | Emphasising words weakly
+| `\*斜体*` | _斜体_ | 不明显地强调
 
-| `\\**bold**` | *bold* | Emphasising words strongly
+| `\\**粗体**` | *粗体* | 明显强调
 
-| `\``monospace``` | `monospace` | Identifiers: variable, procedure, etc. names.
+| `\``等宽字体``` | `monospace` | 用于标识出 变量、过程 之类的名字.
 
-| ``HyperLink <\http://google.com>`_` | http://google.com[HyperLink] | Linking to other web pages.
+| ``超链接 <\http://baidu.com>`_` | http://baidu.com[超链接] | 链接到其他网页
 
 a|
 ``
-Heading +
+标题 +
 ======= +
 ``
 
 a|
 image:ch05_rst_heading.png[,120]
 
-| The `=` can be any punctuation character, heading levels are determined from
-succession of headings.
+| `=` 可以是任何标点符号，标题级由标题的继承确定（译者：也就是上下文啦）
 
 |
 `.. code-block:: nim` +
@@ -154,30 +155,30 @@ a|
 echo("Hello World")
 ``
 
-| To show some example code. This will add syntax highlighting to the code
-specified.
+| 用来展示示例代码。这将为指定的代码添加语法突出显示。
+
 
 |===
 
-For a more comprehensive reference take a look at the following link:
+更全面的参考，请查看以下链接：
 http://sphinx-doc.org/rest.html
 
-Let me show you another example.
+接下来我们再看个例子。
 
 [[list_1_3]]
-.Different placements of doc comments
+.不同位置的文档注释
 ```nim
-## This is the best module in the world.
-## We have a lot of documentation!
+## 这是世界上最好的模块！
+## 我们有一大堆文档！
 ##
 ##
-## Examples
+## 示例
 ## ========
 ##
-## Some examples will follow:
+## 下面给你看几个例子：
 ##
 ##
-## Adding two numbers together
+## 把俩数加起来
 ## ---------------------------
 ##
 ## .. code-block:: nim
@@ -186,25 +187,26 @@ Let me show you another example.
 ##
 
 proc add*(a, b: int): int =
-  ## Adds integer ``a`` to integer ``b`` and returns the result.
+  ## integer 类型的 ``a`` 加上 integer 类型的 ``b`` 然后返回运算结果。
   return a + b
 ```
 
 [[fig_1_2]]
-.The resulting documentation for <<list_1_3,listing 1.3>>
+. <<list_1_3,代码 1.3>> 生成的文档
 image::ch05_math_docs.png[]
 
-As you can see from the example in <<list_1_3,listing 1.3>>,
-documentation comments
-can be placed in many places. They can be in the global scope or locally under
-a procedure. Doc comments under a procedure document what that procedure does,
-the Nim documentation generator generates a listing of all procedures that
-are exported in a module, the ones that have documentation comments will display
-them underneath as shown in <<fig_1_2,figure 1.2>>.
+从 <<list_1_3,代码 1.3>> 中的示例可以看出,
+文档注释可以放在很多地方。
 
-This is how the Nim standard library is documented. For more examples on how
-to document your code you should take a look
-https://github.com/nim-lang/Nim/tree/devel/lib/pure[its source code].
+它们可以在全局作用域内，也可以在过程的局部作用域内。
+在过程文档下的文档注释中，说明该过程的用途，
+*Nim* 文档生成器Nim文档生成器会生成模块中导出的所有过程的列表，
+写了文档注释的的文档将会被显示在下面，
+就像 <<fig_1_2,图 1.2>>中那样。
+
+这就是Nim标准库中使用注释和生成文档的方式。
+有关如何使用注释和生成文档的更多实例，请查看
+https://github.com/nim-lang/Nim/tree/devel/lib/pure[它的源码]].
 
 == Profiling your code
 
