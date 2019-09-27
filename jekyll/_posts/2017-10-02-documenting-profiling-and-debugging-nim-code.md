@@ -5,9 +5,9 @@ excerpt: 本指南讨论了一些用于注释和生成文档、分析和调试ni
 ---
 
 = Nim代码的文档化、分析和调试指南
-:figure-caption: 图 1.
-:listing-caption: 代码 1.
-:table-caption: 表 1.
+:figure-caption: Figure 1.
+:listing-caption: Listing 1.
+:table-caption: Table 1.
 :numbered:
 :toc: left
 
@@ -66,7 +66,7 @@ TIP: 使用优惠码 `fccpicheta` 可以获得六四折优惠。
 
 在nim中，单行注释由井号 `&#35;` 分隔。
 多行注释由 `&#35;[` and `]&#35;` 包裹起来。
-在<<list_1_1,代码 1.1>> 中，分别进行了这两者的示例。
+在<<list_1_1,Listing 1.1>> 中，分别进行了这两者的示例。
 
 [[list_1_1]]
 .*Nim* 中的注释
@@ -89,13 +89,13 @@ var x = 5 # Assign 5 to x.
 ## 这是``test`` 模块的 *文档注释* .
 ```
 
-<<list_1_2,代码 1.2>> 展示了一个非常简单的文档注释
+<<list_1_2,Listing 1.2>> 展示了一个非常简单的文档注释
 *Nim* 编译器包含了一个能给指定模块生成文档的命令。
-实际代码在 <<list_1_2,代码 1.2>> 中，
+实际代码在 <<list_1_2,Listing 1.2>> 中，
 比如说你电脑里有个 `test.nim` ，然后你可以执行 `nim doc test.nim`。
 一般会在你的 `test.nim` 文件旁边生成一个 `test.html`。
 在你最爱的那个浏览器中打开它，就能看到生成出来的 *HTML*
-就像 <<fig_1_1,图 1.1>> 中的截图这样：
+就像 <<fig_1_1,Figure 1.1>> 中的截图这样：
 
 [[fig_1_1]]
 .给 `test.nim` 模块生成的文档
@@ -114,7 +114,7 @@ image::ch05_docgen.png[]
 每个文档注释都被 *reStructuredText* 解析器所解析。
 然后文档生成器基于他解析的 *reStructuredText* 标记生成 *HTML*。
 
-<<table_1_1,表 1.1>>列出了 *reStructuredText* 的一些语法。
+<<table_1_1,Table 1.1>>列出了 *reStructuredText* 的一些语法。
 markup language.
 
 [[table_1_1]]
@@ -194,17 +194,17 @@ proc add*(a, b: int): int =
 ```
 
 [[fig_1_2]]
-. <<list_1_3,代码 1.3>> 生成的文档
+. <<list_1_3,Listing 1.3>> 生成的文档
 image::ch05_math_docs.png[]
 
-从 <<list_1_3,代码 1.3>> 中的示例可以看出,
+从 <<list_1_3,Listing 1.3>> 中的示例可以看出,
 文档注释可以放在很多地方。
 
 它们可以在全局作用域内，也可以在过程的局部作用域内。
 在过程文档下的文档注释中，说明该过程的用途，
 *Nim* 文档生成器Nim文档生成器会生成模块中导出的所有过程的列表，
 写了文档注释的的文档将会被显示在下面，
-就像 <<fig_1_2,图 1.2>>中那样。
+就像 <<fig_1_2,Figure 1.2>>中那样。
 
 这就是Nim标准库中使用注释和生成文档的方式。
 有关如何使用注释和生成文档的更多实例，请查看
@@ -285,7 +285,7 @@ for i in 0 .. 10000: <5>
 程序执行完毕后，您应该在终端窗口中看到一条类似于"writing profile_results.txt..."的消息。
 `main` 程序会在你当前的工作目录中创建一个 `profile_results.txt` 文件，
 文件的内容看起来应该和
-<<listing_1_5,代码 1.5>>差不多
+<<listing_1_5,Listing 1.5>>差不多
 
 [[listing_1_5]]
 .分析结果
@@ -310,7 +310,7 @@ Entry: 4/4 Calls: 3/195 = 1.54% [sum: 195; 195/195 = 100.00%]
 它记录了应用程序最终如何执行那段代码堆栈跟踪。
 然后记录在最常见的路径 `profile_results.txt` 中。
 
-在 <<listing_1_5,代码 1.5>> 所示的报告中,
+在 <<listing_1_5,Listing 1.5>> 所示的报告中,
 分析器制作了195个快照。
 它发现正在执行的过程 `analyse` 中的代码行在那些快照中占了45.64%。
 42.56%的快照调用了 `ab` 过程，没毛病，因为传递给 `analyse` 的字符串主要由字母组成。
@@ -319,7 +319,7 @@ Entry: 4/4 Calls: 3/195 = 1.54% [sum: 195; 195/195 = 100.00%]
 试着在传递给 `analyse` 过程的字符串中添加一些标点符号，
 你会发现分析器监测到并显示出来了 `diff` 过程。
 
-在不使用分析器的情况下，很容易确定 <<listing_1_4,代码 1.4>> 中大部分程序处理了的位置。
+在不使用分析器的情况下，很容易确定 <<listing_1_4,Listing 1.4>> 中大部分程序处理了的位置。
 但是对于更复杂的模块和应用，*Nim Profiler* 非常适合确定哪些程序最常用。
 
 .内存使用情况
