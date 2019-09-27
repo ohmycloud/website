@@ -1,12 +1,13 @@
 ---
+title: Nim代码的文档化、分析和调试指南
 author: Dominik Picheta
-excerpt: 本指南讨论了一些用于记录、分析和调试nim代码的实用工具。
+excerpt: 本指南讨论了一些用于注释和生成文档、分析和调试nim代码的实用工具。
 ---
 
-= nim代码的文档化、分析和调试指南
-:figure-caption: Figure 1.
-:listing-caption: Listing 1.
-:table-caption: Table 1.
+= Nim代码的文档化、分析和调试指南
+:figure-caption: 图 1.
+:listing-caption: 代码 1.
+:table-caption: 表 1.
 :numbered:
 :toc: left
 
@@ -39,18 +40,19 @@ TIP: 使用优惠码 `fccpicheta` 可以获得六四折优惠。
 ****
 
 
-本手册将会和你一起探讨一些实用的工具，用以记录、分析和调试 *Nim* 代码。
+本手册将会和你一起探讨一些实用的工具，
+用以文档化、分析和调试 *Nim* 代码。
 我将会介绍如下内容:
 
 * 在 *Nim* 的文档注释中使用的 *reStructuredText* 语言（RST）
 * *Nim* 性能和内存使用情况分析器
 * 将 *GDB/LLDB* 与 *Nim* 一起使用
 
-请务必准备好nim编译器，
+请务必准备好 *nim* 编译器，
 并按照本指南中的说明进行操作，
 以便达到最佳效果。
 
-== 代码文档
+== 代码文档化
 
 给代码写注释和文档非常重要！
 尤其是在直接查看库的 *api* 甚至软件的源码时。
@@ -76,7 +78,7 @@ var x = 5 # Assign 5 to x.
 ```
 <1> 这种语法还算是挺新的，所以一般都不会支持 *Nim* 的语法高亮。
 
-*Nim* 也提供了一种叫做 *“文档注释”* 的特殊注释类型。
+*Nim* 也提供了一种叫做 *"文档注释* 的特殊注释类型。
 这种类型的注释由nim的文档生成器处理。
 只要用两个井号 `&#35;&#35;` 写的注释都是文档注释。
 
@@ -100,9 +102,9 @@ var x = 5 # Assign 5 to x.
 image::ch05_docgen.png[]
 
 注意截图和你看到的文本样式可能会有差异，请以实际效果为准:)。
-“documentation comment”这俩字是斜体的，
+"documentation comment"这俩字是斜体的，
 因为在文档注释中是用星号(`*`)包裹起来的。
-而 “test” 是用两个反引号包起来的，
+而 "test" 是用两个反引号包起来的，
 这样能显得字体是等距的，
 在讨论诸如变量名之类的标识符时很有用。
 
@@ -280,7 +282,7 @@ for i in 0 .. 10000: <5>
 将其另存为 `main.nim` ，
 然后通过执行 `nim c --profiler:on --stacktrace:on main.nim` 来编译。
 这个例子应该能成功编译。 然后，你可以运行它。
-程序执行完毕后，您应该在终端窗口中看到一条类似于“writing profile_results.txt...”的消息。
+程序执行完毕后，您应该在终端窗口中看到一条类似于"writing profile_results.txt..."的消息。
 `main` 程序会在你当前的工作目录中创建一个 `profile_results.txt` 文件，
 文件的内容看起来应该和
 <<listing_1_5,代码 1.5>>差不多
