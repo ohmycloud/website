@@ -25,10 +25,10 @@ $ choosenim update stable
 ```
 
 如果你还没有，你可以通过
-[these instructions](https://github.com/dom96/choosenim)
+[这里的介绍](https://github.com/dom96/choosenim)
 来获取 ``choosenim``，
 当然你也可以通过我们的
-[安装](https://nim-lang-cn.org/install.html) 页面直接安装。
+[安装](https://nim-cn.com/install.html) 页面直接安装。
 
 
 ## 更新日志
