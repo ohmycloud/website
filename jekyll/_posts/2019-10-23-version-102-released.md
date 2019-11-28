@@ -8,7 +8,7 @@ Nim 团队很高兴公布 v1.0.2 版本，
 
 想要了解更多关于 v1.0.0 的内容, 
 看一看我们一个月前发的
-[发布说明](https://nim-lang.org/blog/2019/09/23/version-100-released.html)。
+[发布说明](/blog/2019/09/23/version-100-released.html)。
 
 尽管距离上个版本只有一个月，
 这个版本也已经经历了超过 [60次新的提交](https://github.com/nim-lang/Nim/compare/v1.0.0...v1.0.2),
@@ -18,7 +18,7 @@ Nim 团队很高兴公布 v1.0.2 版本，
 ## 安装 1.0.2
 
 如果你已经用 ``choosenim`` 安装了之前版本，
-获取 Nim 1.0.2 版本会非常容易:
+升级到 Nim 的 1.0.2 版本会非常简单:
 
 ```bash
 $ choosenim update stable
@@ -28,7 +28,7 @@ $ choosenim update stable
 [这里的介绍](https://github.com/dom96/choosenim)
 来获取 ``choosenim``，
 当然你也可以通过我们的
-[安装](https://nim-cn.com/install.html) 页面直接安装。
+[安装](/install.html) 页面直接安装。
 
 
 ## 更新日志

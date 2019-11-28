@@ -44,11 +44,11 @@ Nim构建了一个温暖和热情的 [社区](/community.html)，
 ### 稳定性保证包含哪些？
 
 向后兼容只覆盖语言的稳定部分，这些部分定义在
-[手册](https://nim-lang.org/docs/manual.html)
+[手册](/docs/manual.html)
 上。
 
 编译器将实现的实验性特性记载在
-[“实验手册”](https://nim-lang.org/docs/manual_experimental.html)
+[“实验手册”](/docs/manual_experimental.html)
 中。
 这些特性可能存在向后不兼容；
 包括 `concepts`、 `do` 记号和一些其它特性。
