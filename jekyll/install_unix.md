@@ -175,6 +175,27 @@ brew install nim
 zypper in nim
 ```
 
+## Snap
+
+获取最新稳定版本:
+
+```
+snap install nim-lang --classic
+```
+
+获取最新长期支持（LTS） 1.0.x 版本:
+
+```
+snap install nim-lang-lts-1 --classic
+```
+
+获取最新每日构建版本:
+
+```
+snap install nim-lang-nightly --classic
+```
+
+
 ## Void Linux
 
 ```
