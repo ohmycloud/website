@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nim中文社区</title>
+    <description>Nim程序设计语言是一种简洁、快速的编程语言， 可被编译成C、C++甚至JavaScript。
+</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 17 Jan 2020 17:51:07 +0000</pubDate>
+    <lastBuildDate>Fri, 17 Jan 2020 17:51:07 +0000</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>2019 Nim 中文社区问卷调研</title>
+        <description>&lt;p&gt;我们骄傲地宣布：
+&lt;a href=&quot;https://forms.gle/MM28istruU8YC7Fz9&quot;&gt;2019Nim中文社区问卷&lt;/a&gt;
+启动！
+无论你当前正在使用 Nim ，还是之前用过 Nim ，或者从未使用过 Nim ；
+我们都想要听听你的观点。&lt;/p&gt;
+
+&lt;p&gt;由于官方使用的是国内无法访问的 Google Form，我们对官方问卷做了本地化，进行了翻译并加入了更符合国内环境的选项。&lt;/p&gt;
+
+&lt;p&gt;我们会在问卷结束后将结果反馈给官方，所以你的反馈将会帮助 Nim 项目了解到它的长处和不足，
+并确定未来的开发优先级。而且会指导中文社区明年的发展重点和方向。&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;&quot;&gt;
+  &lt;a class=&quot;pure-button pure-button-primary&quot; style=&quot;font-size: 85%; display: inline-block;&quot; href=&quot;https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__fWYCt9UOEFCUFpQRThNNlZSVzQ0RjYzUUFPMllCNy4u&quot; target=&quot;_blank&quot;&gt;
+  2019 Nim 中文社区调查问卷
+  &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;完成这个问卷应该会占用你五分钟的时间。
+2020 年 2 月之前你可以随时提交。
+如果你有任何的问题及反馈，请不要吝于告诉我们：&lt;/p&gt;
+
+&lt;p&gt;发邮件给我们 &lt;a href=&quot;mailto:survey@nim-lang.org&quot;&gt;survey@nim-lang.org&lt;/a&gt; ，
+或者在 &lt;a href=&quot;http://forum.nim-lang.org&quot;&gt;Nim 论坛&lt;/a&gt; 中发言。&lt;/p&gt;
+
+&lt;p&gt;这已经是 Nim 官方举办社区问卷的第四个年头了。
+你可以通过下面的链接查看过去几年的统计结果：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nim-lang.org/blog/2016/09/03/community-survey-results-2016.html&quot;&gt;2016&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nim-lang.org/blog/2017/10/01/community-survey-results-2017.html&quot;&gt;2017&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nim-lang.org/blog/2018/10/27/community-survey-results-2018.html&quot;&gt;2018&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;我们也恳请并感谢您将这份问卷传播给其他人。
+你可以在你的社交帐号上，和你的同事、朋友和其他社区分享这份 MicroSoft Forms 的链接。&lt;/p&gt;
+
+&lt;p&gt;感谢您的参与！&lt;/p&gt;
+</description>
+        <pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
+        <link>/blog/2019/12/24/china-community-survey-2019.html</link>
+        <guid isPermaLink="true">/blog/2019/12/24/china-community-survey-2019.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>2019 Nim 社区问卷调研启动</title>
+        <description>&lt;p&gt;我们骄傲地宣布：官方
+&lt;a href=&quot;https://forms.gle/MM28istruU8YC7Fz9&quot;&gt;2019 Nim 社区问卷&lt;/a&gt;
+启动！
+无论你当前正在使用 Nim ，还是之前用过 Nim ，或者从未使用过 Nim ；
+我们都想要听听你的观点。
+你的反馈将会帮助 Nim 项目了解到它的长处和不足，
+并确定未来的开发优先级。&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;&quot;&gt;
+  &lt;a class=&quot;pure-button pure-button-primary&quot; style=&quot;font-size: 85%; display: inline-block;&quot; href=&quot;https://forms.gle/MM28istruU8YC7Fz9&quot; target=&quot;_blank&quot;&gt;
+  调查问卷
+  &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;完成这个问卷应该会占用你不到五分钟的时间。
+根据反馈，2020 年 2 月之前你可以随时提交。
+如果你有任何的问题及反馈，请不要吝于告诉我们：
+发邮件给我们 &lt;a href=&quot;mailto:survey@nim-lang.org&quot;&gt;survey@nim-lang.org&lt;/a&gt; ，
+或者在 &lt;a href=&quot;http://forum.nim-lang.org&quot;&gt;Nim 论坛&lt;/a&gt; 中发言。&lt;/p&gt;
+
+&lt;p&gt;这已经是我们举办社区问卷的第四个年头了。
+你可以通过下面的链接查看过去几年的统计结果：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nim-lang.org/blog/2016/09/03/community-survey-results-2016.html&quot;&gt;2016&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nim-lang.org/blog/2017/10/01/community-survey-results-2017.html&quot;&gt;2017&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nim-lang.org/blog/2018/10/27/community-survey-results-2018.html&quot;&gt;2018&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;我们也恳请并感谢您将这份问卷传播给其他人。
+你可以在你的社交帐号上，和你的同事和其他社区分享这份 Google Forms 的链接。&lt;/p&gt;
+
+&lt;p&gt;感谢所有帮助开发和测试这份问卷的人！
+一旦提交截至，我们会将结果在这里展示，并发布到 Twitter、Nim 论坛和 IRC 中。&lt;/p&gt;
+
+&lt;p&gt;谢谢您的参与！&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
+        <link>/blog/2019/12/20/community-survey-2019.html</link>
+        <guid isPermaLink="true">/blog/2019/12/20/community-survey-2019.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>1.0.4 版本现已发布！</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;以下由中文社区翻译，能力有限，如有翻译错误，欢迎加入 QQ 群指正！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Nim 团队很高兴为大家带来 1.0.4 版本发布的消息，
+这是我们在 Nim 1.0.0 之后发布的第二个补丁版本。&lt;/p&gt;
+
+&lt;p&gt;想要了解更多关于 1.0.0 版本的细节，可以查看我们两个月前
+&lt;a href=&quot;/blog/2019/09/23/version-100-released.html&quot;&gt;版本发布说明&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;距离前一个版本的发布尽管只是过去了一个月的时间，
+但这次的版本已经包含了超过 &lt;a href=&quot;https://github.com/nim-lang/Nim/compare/v1.0.2...v1.0.4&quot;&gt;70 次新的提交&lt;/a&gt;,
+新修复了 20 个问题，
+让我们的 1.0 版本变成了更好的样子。&lt;/p&gt;
+
+&lt;h2 id=&quot;安装-104&quot;&gt;安装 1.0.4&lt;/h2&gt;
+
+&lt;p&gt;如果你已经用 &lt;code class=&quot;highlighter-rouge&quot;&gt;choosenim&lt;/code&gt; 安装了之前版本的 Nim ，
+升级到 Nim 的 1.0.4 版本会非常简单:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;choosenim update stable
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;如果你还没有安装 &lt;code class=&quot;highlighter-rouge&quot;&gt;choosenim&lt;/code&gt; ，
+你可以通过
+&lt;a href=&quot;https://github.com/dom96/choosenim&quot;&gt;这些说明&lt;/a&gt; 来下载和安装 &lt;code class=&quot;highlighter-rouge&quot;&gt;choosenim&lt;/code&gt;，
+当然你也可以按照我们的
+&lt;a href=&quot;/install.html&quot;&gt;安装&lt;/a&gt; 页面直接安装。&lt;/p&gt;
+
+&lt;h2 id=&quot;更新日志&quot;&gt;更新日志&lt;/h2&gt;
+
+&lt;p&gt;你可以
+&lt;a href=&quot;https://github.com/nim-lang/Nim/blob/version-1-0/changelogs/changelog_1_0_4.md&quot;&gt;在我们的 GitHub 仓库中&lt;/a&gt;
+查阅此版本的变更日志以及 Nim 的其余源码。&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;附《更新日志》&lt;/p&gt;
+&lt;h2 id=&quot;语言层面的变更&quot;&gt;语言层面的变更&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;模仿早期版本的 Nim ，在运行时取消了对无符号整数转换的检查。
+文档中已针对这一改进做出了说明。查看 &lt;a href=&quot;&quot;&gt;https://github.com/nim-lang/RFCs/issues/175&lt;/a&gt; 了解更多细节 (#12688)&lt;/li&gt;
+  &lt;li&gt;添加了 &lt;code class=&quot;highlighter-rouge&quot;&gt;or detectOs(Manjaro)&lt;/code&gt;，这样当检测到系统为 Manjaro 时，调用原生的包管理器会使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;pacman&lt;/code&gt; 进行包管理 (&lt;a href=&quot;https://github.com/nim-lang/Nim/pull/12587&quot;&gt;#12587&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;--os:ios&lt;/code&gt; 编译指令现在也代表了 macosx (&lt;a href=&quot;https://github.com/nim-lang/Nim/pull/12585&quot;&gt;#12585&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;导出了 nim.cfg 解析器，现在其他工具也可以调用 &lt;code class=&quot;highlighter-rouge&quot;&gt;readConfigFile&lt;/code&gt; 了 (&lt;a href=&quot;https://github.com/nim-lang/Nim/pull/12602&quot;&gt;#12602&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;bug-修复&quot;&gt;BUG 修复&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;修复了 “在 OSX 上多次调用后，&lt;code class=&quot;highlighter-rouge&quot;&gt;gorgeEx()&lt;/code&gt; 失败”的问题 (&lt;a href=&quot;https://github.com/nim-lang/Nim/issues/12337&quot;&gt;#12337&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;优化和加强了 posix 模块 （&lt;a href=&quot;https://github.com/nim-lang/Nim/issues/10723&quot;&gt;#10723&lt;/a&gt;）&lt;/li&gt;
+  &lt;li&gt;修复了 “Nim 的语法检查 允许使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;gorgeEx()&lt;/code&gt;，但不允许 &lt;code class=&quot;highlighter-rouge&quot;&gt;writeFile()&lt;/code&gt;” 的问题，现在这两个都被提示 &lt;em&gt;don’t run staticExec for ‘nim suggest&lt;/em&gt; 了 (&lt;a href=&quot;https://github.com/nim-lang/Nim/issues/12491&quot;&gt;#12491&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;修复了 “一个算数的低级错误： -3 mod 7 == 3” （&lt;a href=&quot;https://github.com/nim-lang/Nim/issues/12514&quot;&gt;#12514&lt;/a&gt;）&lt;/li&gt;
+  &lt;li&gt;修复了 “后端集成文档中 c2nim 链接失效” 的问题（&lt;a href=&quot;https://github.com/nim-lang/Nim/issues/12537&quot;&gt;#12537&lt;/a&gt;）&lt;/li&gt;
+  &lt;li&gt;修复了 “‎具有默认值的泛型参数会导致不正确的泛型类型解析‎” 的问题 （&lt;a href=&quot;https://github.com/nim-lang/Nim/issues/12528&quot;&gt;#12528&lt;/a&gt;）&lt;/li&gt;
+  &lt;li&gt;修复了 “再次出现的问题: compiler/vmgen.nim(354, 20) &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; leaking temporary 10 slotTempInt [AssertionError] 
+(&lt;a href=&quot;https://github.com/nim-lang/Nim/issues/12547&quot;&gt;#12547&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;修复了 “Windows 上的 64 位(只有在 64 位上有问题) nim 编译/链接断开” (&lt;a href=&quot;https://github.com/nim-lang/Nim/issues/12536&quot;&gt;#12536&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;修复了 “除了最新的 devel 版本No =destroy for elements of closure environments other than for latest devel –gc:destructors” (&lt;a href=&quot;https://github.com/nim-lang/Nim/issues/12577&quot;&gt;#12577&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;修复了 “[1.0.0] 无法使用 –cpu:avr 进行编译” (&lt;a href=&quot;https://github.com/nim-lang/Nim/issues/12395&quot;&gt;#12395&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;修复了 “使用无效的对象变体会导致编译器崩溃” (&lt;a href=&quot;https://github.com/nim-lang/Nim/issues/12379&quot;&gt;#12379&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;修复了 “import 之前写的编译指示会被静默忽略” (&lt;a href=&quot;https://github.com/nim-lang/Nim/issues/5050&quot;&gt;#5050&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;修复了 “ strformat + asyncdispatch + const 同时使用会报错” 的问题 (&lt;a href=&quot;https://github.com/nim-lang/Nim/issues/12612&quot;&gt;#12612&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;修复了 “&lt;code class=&quot;highlighter-rouge&quot;&gt;--nimblePath&lt;/code&gt; 是附加的，需要一个无痛的解决方案” (&lt;a href=&quot;https://github.com/nim-lang/Nim/issues/12601&quot;&gt;#12601&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;修复了 “nim.cfg 中 –define:FOO:VAL 的语法没有文档或者缺失” (&lt;a href=&quot;https://github.com/nim-lang/Nim/issues/12367&quot;&gt;#12367&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;修复了 “使用宏生成的 vm 字符串无法正常使用” (&lt;a href=&quot;https://github.com/nim-lang/Nim/issues/12670&quot;&gt;#12670&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;修复了 “&lt;code class=&quot;highlighter-rouge&quot;&gt;staticRead()&lt;/code&gt; 引入的静态文件变更时，会强制触发重新编译。” (#12663)&lt;/li&gt;
+  &lt;li&gt;修复了终止处理程序中调用 &lt;code class=&quot;highlighter-rouge&quot;&gt;throw&lt;/code&gt; 引发的崩溃 (&lt;a href=&quot;https://github.com/nim-lang/Nim/pull/12572&quot;&gt;#12572&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;修复了用于 具有字符串字段的对象 的 newLit (&lt;a href=&quot;https://github.com/nim-lang/Nim/pull/12542&quot;&gt;#12542&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;文档更新&quot;&gt;文档更新&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;给 Math 模块添加了文档 (&lt;a href=&quot;https://github.com/nim-lang/Nim/pull/12460&quot;&gt;#12460&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;修复了许多无效的链接，尽量将链接替换为了链接到文档内部 (&lt;a href=&quot;https://github.com/nim-lang/Nim/pull/12463&quot;&gt;#12463&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;sequtils：在示例中替换掉了已经遗弃的 ‘random’ 用法 (&lt;a href=&quot;https://github.com/nim-lang/Nim/pull/12515&quot;&gt;#12515&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;给整型添加了文档 (&lt;a href=&quot;https://github.com/nim-lang/Nim/pull/12513&quot;&gt;#12513&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;修复了代码风格的错误 (&lt;a href=&quot;https://github.com/nim-lang/Nim/pull/12545&quot;&gt;#12545&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;修正文档和注释中的几个错误 (&lt;a href=&quot;https://github.com/nim-lang/Nim/pull/12553&quot;&gt;#12553&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;添加文档以更好地区分 &lt;code class=&quot;highlighter-rouge&quot;&gt;getProjectPath&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;getCurrentDir&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;currentSourcePath&lt;/code&gt; (#12565)&lt;/li&gt;
+  &lt;li&gt;doc/tut3.rst: 修复了介绍中的错别字 (&lt;a href=&quot;https://github.com/nim-lang/Nim/pull/12607&quot;&gt;#12607&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;添加了指向 &lt;code class=&quot;highlighter-rouge&quot;&gt;packaging&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;distro&lt;/code&gt; 页面的链接 (&lt;a href=&quot;https://github.com/nim-lang/Nim/pull/12603&quot;&gt;#12603&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;修复了 &lt;code class=&quot;highlighter-rouge&quot;&gt;$&lt;/code&gt;*(dt: DateTime) 的说明 (&lt;a href=&quot;https://github.com/nim-lang/Nim/pull/12660/files&quot;&gt;#12660&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;在 manual.rst 中对 &lt;code class=&quot;highlighter-rouge&quot;&gt;experimental&lt;/code&gt; / &lt;code class=&quot;highlighter-rouge&quot;&gt;parallel&lt;/code&gt; 加入了示例以明确区别  (&lt;a href=&quot;https://github.com/nim-lang/Nim/pull/12472&quot;&gt;#12472&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;修复手册中错误的章节层级关系 (&lt;a href=&quot;https://github.com/nim-lang/Nim/pull/12724&quot;&gt;#12724&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 26 Nov 2019 00:00:00 +0000</pubDate>
+        <link>/blog/2019/11/26/version-104-released.html</link>
+        <guid isPermaLink="true">/blog/2019/11/26/version-104-released.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>1.0.2 版本发布</title>
+        <description>&lt;p&gt;Nim 团队很高兴公布 v1.0.2 版本，
+这是在 1.0.0 之后我们首次发布补丁。&lt;/p&gt;
+
+&lt;p&gt;想要了解更多关于 v1.0.0 的内容, 
+看一看我们一个月前发的
+&lt;a href=&quot;/blog/2019/09/23/version-100-released.html&quot;&gt;发布说明&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;尽管距离上个版本只有一个月，
+这个版本也已经经历了超过 &lt;a href=&quot;https://github.com/nim-lang/Nim/compare/v1.0.0...v1.0.2&quot;&gt;60次新的提交&lt;/a&gt;,
+修复了超过40个错误报告，
+让我们的 1.0.0 能够更加健壮。&lt;/p&gt;
+
+&lt;h2 id=&quot;安装-102&quot;&gt;安装 1.0.2&lt;/h2&gt;
+
+&lt;p&gt;如果你已经用 &lt;code class=&quot;highlighter-rouge&quot;&gt;choosenim&lt;/code&gt; 安装了之前版本，
+升级到 Nim 的 1.0.2 版本会非常简单:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;choosenim update stable
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;如果你还没有，你可以通过
+&lt;a href=&quot;https://github.com/dom96/choosenim&quot;&gt;这里的介绍&lt;/a&gt;
+来获取 &lt;code class=&quot;highlighter-rouge&quot;&gt;choosenim&lt;/code&gt;，
+当然你也可以通过我们的
+&lt;a href=&quot;/install.html&quot;&gt;安装&lt;/a&gt; 页面直接安装。&lt;/p&gt;
+
+&lt;h2 id=&quot;更新日志&quot;&gt;更新日志&lt;/h2&gt;
+
+&lt;div class=&quot;sidebarblock&quot;&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;div class=&quot;paragraph&quot;&gt;
+      查阅此版本的变更日志以及 Nim 的其余源代码，可访问
+    &lt;a href=&quot;https://github.com/nim-lang/Nim/blob/devel/changelogs/changelog_1_0_2.md&quot;&gt;我们的 GitHub 仓库&lt;/a&gt;。
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
+        <link>/blog/2019/10/23/version-102-released.html</link>
+        <guid isPermaLink="true">/blog/2019/10/23/version-102-released.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>1.0 版本正式发布</title>
+        <description>&lt;p&gt;就在今天，Nim团队非常荣幸地宣布万众期待的1.0语言版本。&lt;/p&gt;
+
+&lt;p&gt;Nim一直专注于提供高效、可读和灵活的静态编译类语言。&lt;/p&gt;
+
+&lt;p&gt;1.0版本标志可以在接下来的几年使用Nim的未来版本不会破坏当前版本的代码，开始有稳定的基础。&lt;/p&gt;
+
+&lt;p&gt;Nim构建了一个温暖和热情的 &lt;a href=&quot;/community.html&quot;&gt;社区&lt;/a&gt;，
+准备好了迎接新手们的到来。&lt;/p&gt;
+
+&lt;p&gt;如果你是一名新手，
+看看我们的
+&lt;a href=&quot;/learn.html&quot;&gt;学习资源&lt;/a&gt;
+，在我们的
+&lt;a href=&quot;https://play.nim-lang.org/&quot;&gt;试练场&lt;/a&gt;
+中试用Nim。&lt;/p&gt;
+
+&lt;p&gt;这个版本包含许多更改，包括错误修复和一些语言本身的新特性。
+所有更改都记录在
+&lt;a href=&quot;https://github.com/nim-lang/Nim/blob/devel/changelogs/changelog_1_0_0.md&quot;&gt;此处&lt;/a&gt;
+提供的v1.0.0更改日志中。
+还包括最新版本 &lt;em&gt;（v0.11.0）&lt;/em&gt; 的nimble，其变更日志可在
+&lt;a href=&quot;https://github.com/nim-lang/nimble/blob/master/changelog.markdown#0110---22092019&quot;&gt;此处&lt;/a&gt;获取。&lt;/p&gt;
+
+&lt;h2 id=&quot;稳定保证&quot;&gt;稳定保证&lt;/h2&gt;
+
+&lt;p&gt;1.0版本是长期支持的稳定发布版，
+只接受bug修复和未来新特性，
+前提是它们不破坏向后兼容性。&lt;/p&gt;
+
+&lt;p&gt;1.0.x分支将按需接收bug修复。
+不影响向后兼容的新特性将继续稳步进入1.x分支。&lt;/p&gt;
+
+&lt;p&gt;我们的目标是保证Nim1.0编译的代码在未来任何稳定的Nim1.x版本上可持续的编译。&lt;/p&gt;
+
+&lt;h3 id=&quot;稳定性保证包含哪些&quot;&gt;稳定性保证包含哪些？&lt;/h3&gt;
+
+&lt;p&gt;向后兼容只覆盖语言的稳定部分，这些部分定义在
+&lt;a href=&quot;/docs/manual.html&quot;&gt;手册&lt;/a&gt;
+上。&lt;/p&gt;
+
+&lt;p&gt;编译器将实现的实验性特性记载在
+&lt;a href=&quot;/docs/manual_experimental.html&quot;&gt;“实验手册”&lt;/a&gt;
+中。
+这些特性可能存在向后不兼容；
+包括 &lt;code class=&quot;highlighter-rouge&quot;&gt;concepts&lt;/code&gt;、 &lt;code class=&quot;highlighter-rouge&quot;&gt;do&lt;/code&gt; 记号和一些其它特性。
+也有标准库模块仍然不稳定——这些已经在文档中标记为“不稳定API”。&lt;/p&gt;
+
+&lt;p&gt;你可以使用实验特性，
+即便是产品中，
+但注意这些不像我们期待的那样饱满。&lt;/p&gt;
+
+&lt;h3 id=&quot;例外情况&quot;&gt;例外情况&lt;/h3&gt;
+
+&lt;p&gt;我们当然也必须承认存在例外。在一些严重的情况下，例如标准库的安全漏洞，我们保留使用它的向后不兼容性权利。&lt;/p&gt;
+
+&lt;h2 id=&quot;安装-nim-10&quot;&gt;安装 Nim &lt;em&gt;1.0&lt;/em&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;新手&quot;&gt;新手&lt;/h3&gt;
+
+&lt;p&gt;看看你的操作系统包管理器是不是已经构建了 &lt;em&gt;1.0&lt;/em&gt; 版本，
+或通过
+&lt;a href=&quot;/install.html&quot;&gt;这里&lt;/a&gt;
+安装&lt;/p&gt;
+
+&lt;h3 id=&quot;安装了之前版本的老用户&quot;&gt;安装了之前版本的老用户&lt;/h3&gt;
+
+&lt;p&gt;如果有使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;choosenim&lt;/code&gt; 安装了之前 &lt;code class=&quot;highlighter-rouge&quot;&gt;Nim&lt;/code&gt; 版本的用户，
+简单如下：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;choosenim update stable
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;贡献者们&quot;&gt;贡献者们&lt;/h2&gt;
+
+&lt;p&gt;经年累月，
+有超过500人向Nim的代码贡献过，
+通过实现新特性、
+修复bug和问题、
+写文档等等方式。
+Nim团队感谢所有帮助过我们构建Nim，
+使之能够成为今天这样的贡献者们。&lt;/p&gt;
+
+&lt;p&gt;我们也将感谢所有构建Nimble包、
+扩展Nim生态的贡献者们。
+Nimble包增长稳定，
+2019年8月我们突破了 &lt;strong&gt;1000&lt;/strong&gt; 个包的历史大关。
+我们对于发布 &lt;em&gt;1.0&lt;/em&gt; 将促进生态更长远的发展表示乐观。&lt;/p&gt;
+
+&lt;p&gt;如果你想帮助nim成长，考虑通过
+&lt;a href=&quot;https://opencollective.com/nim&quot;&gt;Open Collective&lt;/a&gt;
+或者
+&lt;a href=&quot;https://nim-lang.org/donate.html&quot;&gt;其他方式&lt;/a&gt;
+捐赠我们。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Sep 2019 00:00:00 +0000</pubDate>
+        <link>/blog/2019/09/23/version-100-released.html</link>
+        <guid isPermaLink="true">/blog/2019/09/23/version-100-released.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Nim语言之父对于1.0版本的个人感言</title>
+        <description>&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;功夫不负有心人，我们终于做到了！
+万众瞩目的 1.0 版本来了。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;当我开始 &lt;code class=&quot;highlighter-rouge&quot;&gt;Nim&lt;/code&gt; 开发时，
+我想的是一个编译成 &lt;code class=&quot;highlighter-rouge&quot;&gt;C&lt;/code&gt; 的不超过2万行代码的简单语言。
+核心指导方针是 &lt;code class=&quot;highlighter-rouge&quot;&gt;Nim&lt;/code&gt; 是 &lt;strong&gt;具有宏系统&lt;/strong&gt; 、
+用以   &lt;strong&gt;扩展&lt;/strong&gt; 微核心缺少的所有特性的 &lt;strong&gt;轻量&lt;/strong&gt; 语言。&lt;/p&gt;
+
+&lt;p&gt;当前的编译器加上它使用的标准库，
+不完全统计有大概14万行代码，
+支持了几乎所有的操作系统和CPU架构，
+可以编译成 &lt;code class=&quot;highlighter-rouge&quot;&gt;C++&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt;，
+并且 &lt;code class=&quot;highlighter-rouge&quot;&gt;Nim&lt;/code&gt; 的元编程能力是数一数二的。
+语言不再轻量，
+也证明了元编程无法取代所有现代语言需要的构建环节。&lt;/p&gt;
+
+&lt;p&gt;例如，
+当 &lt;code class=&quot;highlighter-rouge&quot;&gt;Nim&lt;/code&gt; 用 &lt;em&gt;宏系统&lt;/em&gt; 实现 &lt;code class=&quot;highlighter-rouge&quot;&gt;async&lt;/code&gt; 时，
+宏系统需要能够将代码编译成状态机。
+这些状态机需要 &lt;code class=&quot;highlighter-rouge&quot;&gt;goto&lt;/code&gt; 和获取环境变量的方式。
+所以Nim的内核需要增加 &lt;em&gt;“闭包迭代器”&lt;/em&gt; 来实现。&lt;/p&gt;
+
+&lt;p&gt;此外，
+我们还没有真正了解如何 &lt;em&gt;利用宏系统提供在类型系统层面的可扩展性&lt;/em&gt;，
+所以Nim的内核需要泛型和泛型约束。&lt;/p&gt;
+
+&lt;h2 id=&quot;关于开发进展&quot;&gt;关于开发进展&lt;/h2&gt;
+
+&lt;p&gt;之前说过，
+我对语言开发进展表示满意，
+版本 &lt;em&gt;1.0&lt;/em&gt; 意味着我们现在有不同的开发进展：
+之前的Nim被太多 &lt;em&gt;“最少的惊喜原则”&lt;/em&gt; 推动，
+导致每个人可以说 &lt;em&gt;“额，我认为这本来应该工作…”&lt;/em&gt;，
+然后随后实现的时候，还带来了很多特殊情况。
+这些特殊情况可能失控并让系统 &lt;em&gt;更难&lt;/em&gt; 理解，最终产生了新的……&lt;em&gt;“惊喜”&lt;/em&gt;。
+从 &lt;em&gt;1.0&lt;/em&gt; 版本开始我们遵循 &lt;strong&gt;“规范优先”&lt;/strong&gt; 的开发：
+先写RFC，之后讨论，再写规范，再实现，再在实现的过程中观察 &lt;em&gt;规范&lt;/em&gt; 所带来的反馈。&lt;/p&gt;
+
+&lt;p&gt;对，我知道规范/手册有一些疏漏和bug，但这种现状正在改善。
+新的 &lt;em&gt;“析构器”&lt;/em&gt; 语言特性也是遵循 &lt;em&gt;规范先行&lt;/em&gt; 的思想开发的，
+哪怕规范本身还有瑕疵，效果也能好很多，并且能产生更高质量的结果。&lt;/p&gt;
+
+&lt;h2 id=&quot;nim-的未来&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Nim&lt;/code&gt; 的未来&lt;/h2&gt;
+
+&lt;p&gt;我们想把重心放在Nim的工具上，
+包括 &lt;code class=&quot;highlighter-rouge&quot;&gt;Nimsuggest&lt;/code&gt; (一个跨编辑器的 &lt;code class=&quot;highlighter-rouge&quot;&gt;Nim&lt;/code&gt; 代码补全引擎)，
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Nimble&lt;/code&gt; （ &lt;code class=&quot;highlighter-rouge&quot;&gt;Nim&lt;/code&gt; 的包管理器)，
+和 &lt;code class=&quot;highlighter-rouge&quot;&gt;Nimpretty&lt;/code&gt;（ &lt;code class=&quot;highlighter-rouge&quot;&gt;Nim&lt;/code&gt; 的源代码格式化工具）。
+从我个人的角度，我认为 &lt;em&gt;“增量编译”(IC)&lt;/em&gt; 会是 &lt;code class=&quot;highlighter-rouge&quot;&gt;Nim&lt;/code&gt; 编译器下一个大的里程碑。
+&lt;em&gt;IC&lt;/em&gt; 将会进一步压缩 &lt;code class=&quot;highlighter-rouge&quot;&gt;Nim&lt;/code&gt; 已经很快的编译时间，
+加快对宏扩展和其他构造结果的缓存。&lt;/p&gt;
+
+&lt;p&gt;关于 &lt;code class=&quot;highlighter-rouge&quot;&gt;concepts&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;owned&lt;/code&gt;: 
+有人说，这两个特性必须和 &lt;em&gt;1.0&lt;/em&gt; 版本一起发布，
+因为它们改变了 &lt;code class=&quot;highlighter-rouge&quot;&gt;Nim&lt;/code&gt; 在实际开发过程中的编写方式。
+但，恕不敢苟同，即使没有 &lt;code class=&quot;highlighter-rouge&quot;&gt;concept&lt;/code&gt; ，语言仍然可以很好地运作，
+而且尽管现有的 &lt;code class=&quot;highlighter-rouge&quot;&gt;concepts&lt;/code&gt; 语法和语义亟待改善，但也是能用的。
+现在还不清楚我们是否最终会在 &lt;code class=&quot;highlighter-rouge&quot;&gt;Nim&lt;/code&gt; 中使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;owned&lt;/code&gt; ，我也有其他的想法来改进nim的内存管理。&lt;/p&gt;
+
+&lt;p&gt;不过这都不重要。&lt;em&gt;v1&lt;/em&gt; 版本的宗旨是交付我们有的，不是我们想要的。
+前途是光明的，&lt;em&gt;1.0&lt;/em&gt; 版本只是一个开始。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;就像一场婚姻，婚礼只是开始。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 23 Sep 2019 00:00:00 +0000</pubDate>
+        <link>/blog/2019/09/23/andreas-sentiment.html</link>
+        <guid isPermaLink="true">/blog/2019/09/23/andreas-sentiment.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>实战Nim入门系列（一）——下载安装Nim环境</title>
+        <description>&lt;p&gt;这是当前版本 &lt;em&gt;(v1.0)&lt;/em&gt; 的系列教程，希望能帮助大家快速上手。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;#Windows&quot;&gt;Windows下的下载安装&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;​      &lt;a href=&quot;#一、64位环境常规安装&quot;&gt;一、 64位环境常规安装&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;​      &lt;a href=&quot;#二、32位使用choosenim安装&quot;&gt;二、32位使用choosenim安装&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;​      &lt;a href=&quot;#三、常规安装步骤&quot;&gt;三、常规安装步骤&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#Unix&quot;&gt;类Unix环境下的下载安装&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;​		&lt;a href=&quot;一、使用choosenim进行安装&quot;&gt;一、使用choosenim进行安装&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;​		&lt;a href=&quot;#二、常规方式安装&quot;&gt;二、常规方式安装&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;​		&lt;a href=&quot;#三、脚本一键安装&quot;&gt;三、脚本一键安装&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#MacOS&quot;&gt;MacOS系统下的下载安装&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#从源码编译&quot;&gt;从源码编译&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;windows&quot;&gt;Windows&lt;/h2&gt;
+
+&lt;h3 id=&quot;一64位环境常规安装&quot;&gt;一、64位环境常规安装&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;访问&lt;a href=&quot;https://nim-cn.com&quot;&gt;Nim中文社区&lt;/a&gt;中的&lt;a href=&quot;https://nim-cn.com/install_windows.html&quot;&gt;在Windows下安装Nim&lt;/a&gt;页面&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;点击 &lt;strong&gt;下载x86版本的zip包&lt;/strong&gt; 下载最新版本的Nim&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;将下载好的压缩包放在你想要的位置，并解压&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;运行目录下的 &lt;code class=&quot;highlighter-rouge&quot;&gt;finish.exe&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;em&gt;点击无响应的话，可以参考我发在中文社区的 &lt;a href=&quot;https://nim-cn.com/blog/2019/08/25/v0202-windows-cannot-install.html&quot;&gt;这篇文章&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;之后按照 &lt;code class=&quot;highlighter-rouge&quot;&gt;finish.exe&lt;/code&gt; 的提示，逐步进行&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;完成后按 &lt;code class=&quot;highlighter-rouge&quot;&gt;win&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;r&lt;/code&gt; ，输入 &lt;code class=&quot;highlighter-rouge&quot;&gt;cmd&lt;/code&gt; 并回车&lt;/p&gt;
+
+    &lt;p&gt;在新打开的命令行窗口中，输入 &lt;code class=&quot;highlighter-rouge&quot;&gt;nim -v&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;如果显示&lt;code class=&quot;highlighter-rouge&quot;&gt; nim 不是内部或外部命令&lt;/code&gt;balabala的，说明没有正确安装，请跳转到&lt;a href=&quot;#三、常规安装步骤&quot;&gt;第三章节&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;二32位使用choosenim安装&quot;&gt;二、32位使用choosenim安装&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;choosenim&lt;/code&gt;是一个&lt;code class=&quot;highlighter-rouge&quot;&gt;nim&lt;/code&gt;的版本管理器，类似于&lt;code class=&quot;highlighter-rouge&quot;&gt;nvm&lt;/code&gt;之于&lt;code class=&quot;highlighter-rouge&quot;&gt;node&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;使用&lt;code class=&quot;highlighter-rouge&quot;&gt;choosenim&lt;/code&gt;之后，你可以方便的切换&lt;code class=&quot;highlighter-rouge&quot;&gt;nim&lt;/code&gt;版本和更新&lt;code class=&quot;highlighter-rouge&quot;&gt;nim&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;在Windows下的&lt;code class=&quot;highlighter-rouge&quot;&gt;choosenim&lt;/code&gt;只支持&lt;strong&gt;32位&lt;/strong&gt;的下载，&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;你可以在64位系统下进行安装，但是这样的话你的nim版本只能也使用32位的，否则会报错&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;安装 &lt;code class=&quot;highlighter-rouge&quot;&gt;choosenim&lt;/code&gt;&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;访问&lt;a href=&quot;https://github.com/dom96/choosenim/releases&quot;&gt;这个页面&lt;/a&gt;下载最新版本&lt;code class=&quot;highlighter-rouge&quot;&gt;choosenim&lt;/code&gt;的&lt;code class=&quot;highlighter-rouge&quot;&gt;.exe&lt;/code&gt;格式文件&lt;/li&gt;
+      &lt;li&gt;下载完成后直接双击运行&lt;/li&gt;
+      &lt;li&gt;跟随屏幕指引进行操作即可&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;安装最新稳定版本的&lt;code class=&quot;highlighter-rouge&quot;&gt;nim&lt;/code&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;choosenim&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;stable&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;三常规安装步骤&quot;&gt;三、常规安装步骤&lt;/h3&gt;
+
+&lt;p&gt;本安装步骤为Windows系统通用安装步骤，但是较为复杂，建议有一定的基础的使用者尝试，或者作为&lt;code class=&quot;highlighter-rouge&quot;&gt;finish.exe&lt;/code&gt;无法正确安装的替代方案。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;在&lt;a href=&quot;https://nim-cn.com&quot;&gt;Nim中文社区&lt;/a&gt;中的&lt;a href=&quot;https://nim-cn.com/install_windows.html&quot;&gt;在Windows下安装Nim&lt;/a&gt;页面，下载你的系统对应版本的压缩包&lt;/li&gt;
+  &lt;li&gt;在解压完成后&lt;strong&gt;配置环境变量&lt;/strong&gt;，添加以下两个目录：
+    &lt;ol&gt;
+      &lt;li&gt;你刚才解压出来的文件夹里的&lt;code class=&quot;highlighter-rouge&quot;&gt;bin/&lt;/code&gt;目录&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%USERPROFILE%\.nimble\bin&lt;/code&gt; （&lt;code class=&quot;highlighter-rouge&quot;&gt;%USERPROFILE%&lt;/code&gt;指的是你的HOME目录，Win7以下是&lt;code class=&quot;highlighter-rouge&quot;&gt;我的文档&lt;/code&gt;，也可能叫做&lt;code class=&quot;highlighter-rouge&quot;&gt;Administrator&lt;/code&gt;之类的用户名）&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;下载安装C编译器&lt;code class=&quot;highlighter-rouge&quot;&gt;MingW&lt;/code&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;32位Nim - &lt;a href=&quot;https://nim-lang.org/download/mingw32-6.3.0.7z&quot;&gt;mingw32-6.3.0.7z&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;64位Nim - &lt;a href=&quot;https://nim-lang.org/download/mingw64-6.3.0.7z&quot;&gt;mingw64-6.3.0.7z&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;补全必要的依赖DLL&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;PCRE&lt;/li&gt;
+      &lt;li&gt;OpenSSL&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;下载地址：&lt;a href=&quot;https://nim-lang.org/download/dlls.zip&quot;&gt;https://nim-lang.org/download/dlls.zip&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;下载之后解压在&lt;code class=&quot;highlighter-rouge&quot;&gt;nim.exe&lt;/code&gt;的同级目录中&lt;/p&gt;
+
+        &lt;p&gt;&lt;em&gt;通常是&lt;code class=&quot;highlighter-rouge&quot;&gt;bin/&lt;/code&gt;目录下&lt;/em&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;在终端中运行&lt;code class=&quot;highlighter-rouge&quot;&gt;nim -v&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;如果本安装方式依然无法让&lt;code class=&quot;highlighter-rouge&quot;&gt;nim -v&lt;/code&gt;在你的电脑中正确运行，你可以来&lt;a href=&quot;https://jq.qq.com/?_wv=1027&amp;amp;k=5mGEIrV&quot;&gt;Nim开发集中营&lt;/a&gt;QQ群中提问，我们很乐意帮助你！&lt;/p&gt;
+
+&lt;h2 id=&quot;unix&quot;&gt;Unix&lt;/h2&gt;
+
+&lt;p&gt;类Unix环境下，墙裂推荐使用&lt;code class=&quot;highlighter-rouge&quot;&gt;choosenim&lt;/code&gt;进行版本控制，高效方便，省电低碳，省下时间做大事~&lt;/p&gt;
+
+&lt;h3 id=&quot;一使用choosenim进行安装&quot;&gt;一、使用choosenim进行安装&lt;/h3&gt;
+
+&lt;p&gt;使用&lt;code class=&quot;highlighter-rouge&quot;&gt;choosenim&lt;/code&gt;安装Nim最新的稳定版本， 只需要在你的终端中运行下方的命令，然后根据屏幕上的说明操作即可：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl https://nim-lang.org/choosenim/init.sh &lt;span class=&quot;nt&quot;&gt;-sSf&lt;/span&gt; | sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;注：可能需要root权限&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;二常规方式安装&quot;&gt;二、常规方式安装&lt;/h3&gt;
+
+&lt;p&gt;再次说明，Linux环境中建议优先选择使用&lt;code class=&quot;highlighter-rouge&quot;&gt;choosenim&lt;/code&gt;进行安装，此安装方式没有使用&lt;code class=&quot;highlighter-rouge&quot;&gt;choosenim&lt;/code&gt;方式灵活和方便。&lt;/p&gt;
+
+&lt;p&gt;和楼上的Windows常规方法安装类似，只不过由于c编译器都已经系统自带了，所以省了一步&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;在&lt;a href=&quot;https://nim-cn.com&quot;&gt;Nim中文社区&lt;/a&gt;中的&lt;a href=&quot;https://nim-cn.com/install_unix.html&quot;&gt;在Unix下安装Nim&lt;/a&gt;页面，下载你的系统对应版本的预构建二进制文件压缩包&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;手动配置&lt;code class=&quot;highlighter-rouge&quot;&gt;PATH&lt;/code&gt;环境变量&lt;/p&gt;
+
+    &lt;p&gt;编译器和工具的二进制文件都位于&lt;code class=&quot;highlighter-rouge&quot;&gt;bin&lt;/code&gt;目录中。 要使用Nim进行开发，需要在你的 &lt;a href=&quot;https://zh.wikipedia.org/wiki/PATH_(变量)&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PATH&lt;/code&gt;环境变量&lt;/a&gt; 中添加以下两个目录：&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;你解压的文件夹下的&lt;code class=&quot;highlighter-rouge&quot;&gt;bin&lt;/code&gt;目录下&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~\.nimble\bin&lt;/code&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;~&lt;/code&gt;指的是你的HOME目录)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;运行&lt;code class=&quot;highlighter-rouge&quot;&gt;nim -v&lt;/code&gt;测试安装结果&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;三脚本一键安装&quot;&gt;三、脚本一键安装&lt;/h3&gt;
+
+&lt;p&gt;从@Sheldon那里抄来的：&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/nim-lang/Nim.git
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;Nim
+sh build_all.sh
+&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;EOF&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt; &amp;gt;&amp;gt; ~/.bashrc
+export NIM=/root/Nim/bin
+export NIMBLE_DIR=/root/.nimble
+export PATH=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$NIM&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$NIMBLE&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOF
+&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;macos&quot;&gt;MacOS&lt;/h2&gt;
+
+&lt;p&gt;原谅我穷。。并没有Mac。。&lt;/p&gt;
+
+&lt;p&gt;不过你可以去&lt;a href=&quot;https://nim-cn.com/install_unix.html&quot;&gt;中文社区&lt;/a&gt;看看关于Mac安装的部分。&lt;/p&gt;
+
+&lt;h2 id=&quot;从源码编译&quot;&gt;从源码编译&lt;/h2&gt;
+
+&lt;p&gt;很惊讶你竟然选择了这么 Cooooooooool 的安装方式！！&lt;/p&gt;
+
+&lt;p&gt;我觉得你这么极客的人也不需要我带着你弄了，你还是去&lt;a href=&quot;https://nim-cn.com/install.html&quot;&gt;中文社区&lt;/a&gt;看看吧~&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 11 Sep 2019 00:00:00 +0000</pubDate>
+        <link>/blog/2019/09/11/install-nim.html</link>
+        <guid isPermaLink="true">/blog/2019/09/11/install-nim.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>浅谈Nim Web开发</title>
+        <description>&lt;p&gt;浅谈Nim Web开发&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Nim is a statically typed compiled systems programming language. 
+It combines successful concepts from mature languages like Python,Ada and Modula.
+
+Nim是一种静态类型编译的系统编程语言。
+它结合了来自成熟语言（如Python、Ada和Modula）的成功概念。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Nim中文网站：&lt;a href=&quot;https://nim-cn.com/&quot;&gt;https://nim-cn.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;下载页：&lt;a href=&quot;https://nim-cn.com/install.html&quot;&gt;https://nim-cn.com/install.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;#背景&quot;&gt;背景&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;#技术点&quot;&gt;技术点&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;2.1 &lt;a href=&quot;#立即模式&quot;&gt;立即模式&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;2.2 &lt;a href=&quot;#使用Javascript模块&quot;&gt;使用Javascript模块&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;2.3 &lt;a href=&quot;#karax的虚拟DOM实现&quot;&gt;Karax的虚拟DOM实现&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;2.4 &lt;a href=&quot;#web后端&quot;&gt;Web后端&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;背景&quot;&gt;背景&lt;/h2&gt;
+&lt;p&gt;2015年接触到Nim的时候被它既有高级抽象又能编译成C的特性吸引，
+当时正感到Go操作底层硬件的无力，
+不能满足软硬兼施，
+从云端做到底层嵌入式的技术发展需求。
+有了学习Go语言的经验，
+拿到Nim源码先从标准库开始看，
+到了&lt;code class=&quot;highlighter-rouge&quot;&gt;dom.nim&lt;/code&gt;，
+发现Nim可以做Web前端，
+这样想做的领域就统一了。
+直到Karax的诞生，
+Web开发的场景被全面覆盖，
+在有一些预见之后，我们开始了对Karax的尝试。&lt;/p&gt;
+
+&lt;p&gt;重写的项目来自于一个layui和ThinkPHP框架的上线产品，
+前端开发使用Karax，
+后端使用Jester做Web服务，
+用Websocket做长连接API通信。&lt;/p&gt;
+
+&lt;p&gt;没有Karax的文档，
+仅从example和源码中一点点理解buildHtml和虚拟DOM的实现，
+Karax和它的代码一样轻量，机制、组件、生态需要从零构建，
+让我坚持下来的是相信它会带来不一样的Web开发体验，
+而且这些体验和经验对于Nim GUI在三端的统一至关重要。&lt;/p&gt;
+
+&lt;h2 id=&quot;技术点&quot;&gt;技术点&lt;/h2&gt;
+&lt;p&gt;本系列将从理论和实践上分别展开，
+对解决问题过程中使用的方法一一讲解，
+旨在希望能够让大家理解和学会使用Karax。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;理论上的重点在立即模式、渲染机制、虚拟DOM与DOM的映射，
+这部分将主要根据Karax中的源码进行梳理；&lt;/li&gt;
+  &lt;li&gt;实践上的重点在Javascript原生模块导入；&lt;/li&gt;
+  &lt;li&gt;机制上，实现登录、退出、路由、页面加载数据、页面间传值、工作流、必选字段；&lt;/li&gt;
+  &lt;li&gt;组件上，实现表格的翻页，动态设置每页显示数量，全选和单选的逻辑关系，即时响应搜索，日历。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;立即模式&quot;&gt;立即模式&lt;/h3&gt;
+&lt;p&gt;立即模式（immediate mode）是GUI的概念，
+和立即模式相对的是保留模式（retained mode）,
+关于两个模式比较形象的解释：
+&lt;a href=&quot;https://blog.csdn.net/cvper/article/details/86568245&quot;&gt;https://blog.csdn.net/cvper/article/details/86568245&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这意味着浏览器渲染的每一帧变化，和你看到的桌面软件、视频、游戏的连续变化等，从操作系统的层面看没有什么不同。在立即模式下虚拟DOM节点成为无状态的(stateless)节点，使用diff算法更新，这与React的diff算法一致。Web前端是GUI的一种表现形式，可以借助Nim的特性和立即模式思想的指导下扩展到GUI开发，加深对计算机底层的理解。对这方面感兴趣的同学，可以研究下&lt;a href=&quot;https://github.com/yglukhov/nimx&quot;&gt;https://github.com/yglukhov/nimx&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;使用javascript模块&quot;&gt;使用Javascript模块&lt;/h3&gt;
+
+&lt;p&gt;可以把这些模块写成pure的组件，我们采用简单的方式直接使用Echarts的函数，这涉及到FFI，Nim使用importc和importcpp与其后端语言交互。根据不同的Javascript模块类型，导入浏览器全局变量和方法。文档和源码看起，这里主要描述如何通过Javascript模块源码将需要使用的函数导入Karax。如根据Echarts的源码：&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;global&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;undefined&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;amd&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;exports&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;global&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;echarts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}));&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;use strict&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//...&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;echartsProto&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ECharts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prototype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//...&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;echartsProto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setOption&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;option&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;notMerge&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;lazyUpdate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{...}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//...&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;theme$$1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;opts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{...}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//...&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;init&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//...&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;得出&lt;/p&gt;
+
+&lt;div class=&quot;language-nim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;EChart&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ref&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;object&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;proc &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setOption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EChart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;option&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;JsonNode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;importcpp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;proc &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;echartsInit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EChart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;importc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;echarts.init&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;项目中使用的另一个Javascript模块是&lt;code class=&quot;highlighter-rouge&quot;&gt;cryptojs&lt;/code&gt;，用于加密从浏览器向后端传输的敏感信息。&lt;/p&gt;
+
+&lt;p&gt;从&lt;code class=&quot;highlighter-rouge&quot;&gt;crypotojs/components/md5.js&lt;/code&gt;中：&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;C&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;CryptoJS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;C_algo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;algo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//...&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;MD5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;C_algo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MD5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Hasher&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({...})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;core.js&lt;/code&gt;中：&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;WordArray&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;C_lib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;WordArray&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//...&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;encoder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;encoder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Hex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;得到：&lt;/p&gt;
+
+&lt;div class=&quot;language-nim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CryptoJS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;importc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.}:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;JsObject&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;proc &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;MD5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;JsObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cstring&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;JsObject&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;importcpp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;#.MD5(#)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;proc &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;JsObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cstring&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;importcpp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;#.toString()&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Javascript对象在Nim中用JsObject表示，可以使用.操作符访问其字段和函数，函数需要导入为Nim过程；&lt;/p&gt;
+
+&lt;div class=&quot;language-nim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#Nim文件中组成链式表达式&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hash&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CryptoJS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MD5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Nim编译成的Javascript符合ECMAScript3规范，新规范不被支持。
+Karax将所有Nim代码编译成一个js文件，通过
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script src=&quot;xxx.js&quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt;，引入到index.html中。&lt;/p&gt;
+
+&lt;h3 id=&quot;karax的虚拟dom实现&quot;&gt;karax的虚拟DOM实现&lt;/h3&gt;
+
+&lt;div class=&quot;language-nim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Karax虚拟DOM的实现入口，另一个setRenderer是没有RouterData的重载方法&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;var&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KaraxInstance&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;proc &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setRenderer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;renderer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;proc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RouterData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VNode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                  &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cstring&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;ROOT&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                  &lt;span class=&quot;n&quot;&gt;clientPostRenderCallback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;proc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RouterData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KaraxInstance&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{.&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;discardable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;onload&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;onhashChange&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;redraw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;该过程从&lt;code class=&quot;highlighter-rouge&quot;&gt;renderer&lt;/code&gt;返回的&lt;code class=&quot;highlighter-rouge&quot;&gt;VNode&lt;/code&gt;创建一个虚拟DOM树，
+与id为&lt;code class=&quot;highlighter-rouge&quot;&gt;ROOT&lt;/code&gt;的DOM节点相对应，
+并提供一个渲染后的回调过程，
+用于例如Echarts节点先渲染再填充的场景，
+过程返回&lt;code class=&quot;highlighter-rouge&quot;&gt;KaraxInstance&lt;/code&gt;，
+它是Karax虚拟DOM与浏览器DOM之间的桥梁，
+用全局变量&lt;code class=&quot;highlighter-rouge&quot;&gt;kxi&lt;/code&gt;导出，
+设置浏览器&lt;code class=&quot;highlighter-rouge&quot;&gt;window&lt;/code&gt;对象加载时的方法为&lt;code class=&quot;highlighter-rouge&quot;&gt;init&lt;/code&gt;,
+并设置哈希改变的回调为&lt;code class=&quot;highlighter-rouge&quot;&gt;redraw()&lt;/code&gt;。&lt;/p&gt;
+
+&lt;div class=&quot;language-nim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;proc &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;reqFrame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;proc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()):&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;importc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;window.requestAnimationFrame&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;proc &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;redraw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KaraxInstance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# we buffer redraw requests:&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;drawTimeout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;clearTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;drawTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;drawTimeout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dodraw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;renderId&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;renderId&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reqFrame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;proc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dodraw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;dodraw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;proc &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ev&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;renderId&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reqFrame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;proc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dodraw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;init&lt;/code&gt;将&lt;code class=&quot;highlighter-rouge&quot;&gt;kxi.renderId&lt;/code&gt;设置为浏览器window对象请求一次动画帧返回的句柄，
+并设置请求动画帧的回调为&lt;code class=&quot;highlighter-rouge&quot;&gt;dodraw&lt;/code&gt;。 如果&lt;code class=&quot;highlighter-rouge&quot;&gt;kxi.renderId&lt;/code&gt;为零， &lt;code class=&quot;highlighter-rouge&quot;&gt;redraw&lt;/code&gt;初始化&lt;code class=&quot;highlighter-rouge&quot;&gt;kxi.renderId&lt;/code&gt;，否则执行&lt;code class=&quot;highlighter-rouge&quot;&gt;dodraw&lt;/code&gt;。&lt;/p&gt;
+
+&lt;div class=&quot;language-nim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;proc &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;dodraw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KaraxInstance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;renderer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isNil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rdata&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RouterData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hashPart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hashPart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newtree&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;renderer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rdata&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;inc&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;runCount&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;newtree&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rootId&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toFocus&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;nil&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;currentTree&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;asdom&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toDom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newtree&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;useAttachedNode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;replaceById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rootId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;asdom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;doAssert&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;same&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;currentTree&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rootId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;olddom&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rootId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;diff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newtree&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;currentTree&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;olddom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kxi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;如果当前虚拟DOM树还没有创建，
+则将新树转换为DOM树替换原&lt;code class=&quot;highlighter-rouge&quot;&gt;kxi.rootId&lt;/code&gt;的内容；
+如果已经存在，
+先断言当前虚拟DOM树与浏览器DOM树是相同的，
+否则发起异常，
+然后获取&lt;code class=&quot;highlighter-rouge&quot;&gt;kxi.rootId&lt;/code&gt;的DOM节点作为旧DOM树与新的虚拟DOM树进行diff算法，
+得到补丁集，
+根据等价、相似、不同三种结果，
+对节点进行相应更新。&lt;/p&gt;
+
+&lt;h3 id=&quot;web后端&quot;&gt;web后端&lt;/h3&gt;
+
+&lt;p&gt;Nim的Web后端可以使用&lt;code class=&quot;highlighter-rouge&quot;&gt;Jester&lt;/code&gt;框架，
+支持多线程异步，
+涉及到websocket的，
+可以使用&lt;a href=&quot;https://github.com/niv/websocket.nim&quot;&gt;niv/websocket.nim&lt;/a&gt;，
+部署方面https要求websocket使用&lt;code class=&quot;highlighter-rouge&quot;&gt;wss&lt;/code&gt;，具体将在后面讲解。&lt;/p&gt;
+
+&lt;p&gt;这里简单介绍了 &lt;em&gt;如何使用Javascript模块的类型&lt;/em&gt;和&lt;em&gt;库函数&lt;/em&gt;、&lt;em&gt;立即模式&lt;/em&gt;，
+根据源码讲解了&lt;em&gt;Karax虚拟DOM的实现机制&lt;/em&gt;等理论知识，
+后面将讲解这些特性在应用中的实践。&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 31 Aug 2019 00:00:00 +0000</pubDate>
+        <link>/blog/2019/08/31/web-fullstack.html</link>
+        <guid isPermaLink="true">/blog/2019/08/31/web-fullstack.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Windows下nim-lang 0.20版本安装，无法运行finish.exe的解决方案</title>
+        <description>&lt;p&gt;Windows下 nim v0.20 版本安装，无法运行 finish.exe 的解决方案&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Nim is a statically typed compiled systems programming language. 
+It combines successful concepts from mature languages like Python,Ada and Modula.
+
+Nim是一种静态类型编译的系统编程语言。
+它结合了来自成熟语言（如Python、Ada和Modula）的成功概念。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Nim中文网站：&lt;a href=&quot;https://nim-cn.com/&quot;&gt;https://nim-cn.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;下载页：&lt;a href=&quot;https://nim-cn.com/install.html&quot;&gt;https://nim-cn.com/install.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#安装步骤&quot;&gt;安装Nim&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#无法运行finish_exe的解决方案&quot;&gt;无法运行finish.exe的解决方案&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;安装步骤&quot;&gt;安装步骤&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;进入上方官方网站，
+并根据你使用的操作系统，
+下载最新的稳定版压缩包&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;解压到任意你喜欢的目录下&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;运行此目录下的finish.exe&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;根据提示进行环境变量的配置&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;根据提示进行MingW的下载和解压，
+并配置目录下的bin目录到环境变量中，
+所以无需解压到nim目录下&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;在finish.exe引导安装完成之后 &lt;em&gt;（建议先重启电脑，防止环境变量不生效）&lt;/em&gt; ，
+打开一个命令行，
+并输入：nim命令进行测试。
+如果能够显示如下图像，
+就说明安装成功了。&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/img/posts/2019-08-25-v0202-windows-cannot-install-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;但在0.20版本安装的过程中，出现了finish.exe无法运行的情况，点击之后没有反应，后来终于找到了解决方案，并亲测有效。&lt;/p&gt;
+
+&lt;h2 id=&quot;无法运行finish_exe的解决方案&quot;&gt;无法运行finish_exe的解决方案&lt;/h2&gt;
+
+&lt;h3 id=&quot;一查找问题&quot;&gt;一、查找问题&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;在finish.exe同级目录下，
+按住Shift键，同时右击文件夹的空白处，
+选择在此处打开Poweshell（或者cmd）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;输入并运行.\finish.exe&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;正常来说，有问题的话这里会直接抛出异常，并打印出错误原因；
+没问题的话，这里会直接正常运行finish.exe&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;然后就可以根据报错，去查找答案了。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;二解决问题&quot;&gt;二、解决问题&lt;/h3&gt;
+&lt;h4 id=&quot;error-unhandled-exception-file-cuserxxxnimblebin-does-not-exist-oserror&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Error: unhandled exception: file 'C:\user\xxx\.nimble\bin' does not exist [OSError]&lt;/code&gt;&lt;/h4&gt;
+
+&lt;h5 id=&quot;参考资料&quot;&gt;参考资料：&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/nim-lang/Nim/issues/11676#issuecomment-510780848&quot;&gt;https://github.com/nim-lang/Nim/issues/11676#issuecomment-510780848&lt;/a&gt; （这条回复我写的，欢迎follow我~）&lt;/p&gt;
+
+&lt;h5 id=&quot;发生原因&quot;&gt;发生原因：&lt;/h5&gt;
+&lt;p&gt;怀疑可能是因为&lt;code class=&quot;highlighter-rouge&quot;&gt;finish.exe&lt;/code&gt;没有权限在【&lt;code class=&quot;highlighter-rouge&quot;&gt;我的文档&lt;/code&gt;】
+（姑且按Win7这么叫，
+毕竟win8以后是用户名了，
+其实正经应该叫&lt;code class=&quot;highlighter-rouge&quot;&gt;%User Home%&lt;/code&gt;，
+但是不知道该怎么翻译……）
+中创建目录导致的。&lt;/p&gt;
+
+&lt;h5 id=&quot;解决方法&quot;&gt;解决方法：&lt;/h5&gt;
+&lt;p&gt;手动在&lt;code class=&quot;highlighter-rouge&quot;&gt;%User Home%&lt;/code&gt;中创建&lt;code class=&quot;highlighter-rouge&quot;&gt;.nimble/&lt;/code&gt;目录，然后再试试在命令行中运行&lt;code class=&quot;highlighter-rouge&quot;&gt;finish.exe&lt;/code&gt;，还不行就把&lt;code class=&quot;highlighter-rouge&quot;&gt;.nimble/&lt;/code&gt;下的&lt;code class=&quot;highlighter-rouge&quot;&gt;bin/&lt;/code&gt;也创建了。&lt;/p&gt;
+
+&lt;p&gt;我的是在把这两个都创建了之后就好了。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;目前没有碰到其他问题，
+如果有朋友遇到了其他问题的话，
+欢迎来&lt;a href=&quot;https://blog.doylee.cn/&quot;&gt;我的博客&lt;/a&gt;下面留言，
+让我们一起帮助Nim快速成长（到1.0版本）！&lt;/p&gt;
+
+&lt;p&gt;—— &lt;a href=&quot;https://blog.doylee.cn/win-install-nim/&quot;&gt;博客原文&lt;/a&gt;转自《&lt;a href=&quot;https://blog.doylee.cn/&quot;&gt;乱世之牙&lt;/a&gt;》&lt;/p&gt;
+</description>
+        <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
+        <link>/blog/2019/08/25/v0202-windows-cannot-install.html</link>
+        <guid isPermaLink="true">/blog/2019/08/25/v0202-windows-cannot-install.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Nim中文官网现已上线！</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://nim-cn.com&quot;&gt;Nim中文官网&lt;/a&gt;现已上线！
+大家可以通过&lt;a href=&quot;https://nim-cn.com&quot;&gt;https://nim-cn.com&lt;/a&gt;来访问。&lt;/p&gt;
+
+&lt;h2 id=&quot;足下&quot;&gt;足下&lt;/h2&gt;
+&lt;p&gt;官网是我们的起点，
+它不只是一个官网的中文镜像，
+我们更希望它是一个国内Nim圈子的基地，
+一个核心。
+所有的资源都会围绕这个核心，
+所以我们会认真地打磨它：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;我们会及时更新和&lt;strong&gt;翻译&lt;/strong&gt;官网的博客和其他更新，
+以便大家掌握第一手的Nim资讯&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;我们会及时将国内的Nim资源&lt;strong&gt;整合&lt;/strong&gt;起来，
+  让官网可以真正运行起来，
+  发挥它的作用，
+  走出一条中国特色的Nim发展道路。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;当你需要&lt;strong&gt;教程&lt;/strong&gt;和&lt;strong&gt;资料&lt;/strong&gt;时，
+我们希望你第一个想到的是去官网上找，
+并且我们会尽全力让你能够在官网上找到你需要的一切。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;我们也会在官网上建立论坛上的优秀资源的索引，
+定期更新及时、优质的&lt;strong&gt;论坛资源&lt;/strong&gt;，
+并推送到思否、CSDN、OSChina、微博等主流&lt;strong&gt;媒体&lt;/strong&gt;上。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;生态&quot;&gt;生态&lt;/h2&gt;
+&lt;p&gt;我们的初衷是想要建立起国内的Nim开发者生态。&lt;/p&gt;
+
+&lt;p&gt;以官网为&lt;strong&gt;核心&lt;/strong&gt;，
+让Nim开发者们把注意力集中到这里：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;官网上有很多&lt;a href=&quot;https://nim-cn.com/community.html#%E8%AE%BA%E5%9D%9B&quot;&gt;&lt;strong&gt;论坛&lt;/strong&gt;的索引&lt;/a&gt;，有问题可以去论坛问，便于存档；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;官网上也尽量多地整理了&lt;a href=&quot;https://nim-cn.com/community.html#%E5%8D%B3%E6%97%B6%E8%81%8A%E5%A4%A9&quot;&gt;&lt;strong&gt;QQ、微信群&lt;/strong&gt;&lt;/a&gt;，
+有紧急的问题可以去聊天工具上问，能够及时得到回复；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;也可以通过&lt;a href=&quot;https://nim-cn.com/learn.html&quot;&gt;学习&lt;/a&gt;页面上的【&lt;strong&gt;社区资源&lt;/strong&gt;】模块，
+获取到国内主流媒体上先行者的问题、解答或者一些心得体会的博文；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;也可能会有线下的交流见面会，或者论坛、QQ群、微信群的一些活动，
+让我们的社区有爱又团结，发挥出&lt;strong&gt;社区&lt;/strong&gt;的力量。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;而这些都可以从&lt;a href=&quot;https://nim-cn.com/community.html&quot;&gt;社区&lt;/a&gt;中查看，
+我们也会将活动进行&lt;a href=&quot;https://nim-cn.com/blog.html&quot;&gt;博客&lt;/a&gt;的推送，
+你可以订阅&lt;a href=&quot;https://nim-cn.com/feed.xml&quot;&gt;RSS&lt;/a&gt;以及时获取这些令人振奋的消息。&lt;/p&gt;
+
+&lt;h2 id=&quot;修远&quot;&gt;修远&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;目前官网中最关键的——&lt;strong&gt;文档&lt;/strong&gt;，还没有能够完全翻译完，
+  &lt;a href=&quot;https://nim-cn.com/learn.html&quot;&gt;学习&lt;/a&gt;和&lt;a href=&quot;https://nim-cn.com/documentation.html&quot;&gt;文档&lt;/a&gt;两个模块中的中文文档还在由&lt;a href=&quot;https://github.com/gogolxdong&quot;&gt;@sheldon&lt;/a&gt;紧锣密鼓地翻译中，
+  但是大家都是通过业余时间以非盈利的方式参与进来的，
+  难免工作之余精力优先，
+  所以也欢迎大家加入&lt;a href=&quot;https://github.com/nim-lang-cn&quot;&gt;我们&lt;/a&gt;来贡献自己的力量。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;我们也欢迎你&lt;strong&gt;把自己的Nim博客推荐给我们&lt;/strong&gt;！
+  我们欢迎各种方向，各种优质、高产的Nim博客，
+  我们会在&lt;a href=&quot;https://nim-cn.com/learn.html&quot;&gt;学习&lt;/a&gt;页面的社区资源栏将你的博客挂上，
+  供大家学习。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;new runtimes完成之日，就是Nim 1.0发布之时！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;特别感谢&lt;a href=&quot;https://github.com/gogolxdong&quot;&gt;@sheldon&lt;/a&gt;大佬的鼎力支持
+和&lt;a href=&quot;https://jq.qq.com/?_wv=1027&amp;amp;k=50EQ6eZ&quot;&gt;Nim开发集中营&lt;/a&gt;各位的帮助。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;感谢大家的支持和等待，让我们一起创造Nim中文社区的繁荣，推动Nim的发展。&lt;/p&gt;
+</description>
+        <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
+        <link>/blog/2019/08/24/the-chinese-official-site-of-nim.html</link>
+        <guid isPermaLink="true">/blog/2019/08/24/the-chinese-official-site-of-nim.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
